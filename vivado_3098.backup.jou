@@ -1,0 +1,366 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Thu Apr 11 09:00:33 2024
+# Process ID: 3098
+# Current directory: /home/neya
+# Command line: vivado
+# Log file: /home/neya/vivado.log
+# Journal file: /home/neya/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/neya/work/tusur/gproject/sound/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 32768 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 2 [get_debug_cores u_ila_0 ]
+endgroup
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list i_audio/i_clocking/CLK_48 ]]
+set_property port_width 24 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {line_in_r[0]} {line_in_r[1]} {line_in_r[2]} {line_in_r[3]} {line_in_r[4]} {line_in_r[5]} {line_in_r[6]} {line_in_r[7]} {line_in_r[8]} {line_in_r[9]} {line_in_r[10]} {line_in_r[11]} {line_in_r[12]} {line_in_r[13]} {line_in_r[14]} {line_in_r[15]} {line_in_r[16]} {line_in_r[17]} {line_in_r[18]} {line_in_r[19]} {line_in_r[20]} {line_in_r[21]} {line_in_r[22]} {line_in_r[23]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 24 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {R_DELAY_inst/o_dat[0]} {R_DELAY_inst/o_dat[1]} {R_DELAY_inst/o_dat[2]} {R_DELAY_inst/o_dat[3]} {R_DELAY_inst/o_dat[4]} {R_DELAY_inst/o_dat[5]} {R_DELAY_inst/o_dat[6]} {R_DELAY_inst/o_dat[7]} {R_DELAY_inst/o_dat[8]} {R_DELAY_inst/o_dat[9]} {R_DELAY_inst/o_dat[10]} {R_DELAY_inst/o_dat[11]} {R_DELAY_inst/o_dat[12]} {R_DELAY_inst/o_dat[13]} {R_DELAY_inst/o_dat[14]} {R_DELAY_inst/o_dat[15]} {R_DELAY_inst/o_dat[16]} {R_DELAY_inst/o_dat[17]} {R_DELAY_inst/o_dat[18]} {R_DELAY_inst/o_dat[19]} {R_DELAY_inst/o_dat[20]} {R_DELAY_inst/o_dat[21]} {R_DELAY_inst/o_dat[22]} {R_DELAY_inst/o_dat[23]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 16 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {R_DELAY_inst/axis_data_count[0]} {R_DELAY_inst/axis_data_count[1]} {R_DELAY_inst/axis_data_count[2]} {R_DELAY_inst/axis_data_count[3]} {R_DELAY_inst/axis_data_count[4]} {R_DELAY_inst/axis_data_count[5]} {R_DELAY_inst/axis_data_count[6]} {R_DELAY_inst/axis_data_count[7]} {R_DELAY_inst/axis_data_count[8]} {R_DELAY_inst/axis_data_count[9]} {R_DELAY_inst/axis_data_count[10]} {R_DELAY_inst/axis_data_count[11]} {R_DELAY_inst/axis_data_count[12]} {R_DELAY_inst/axis_data_count[13]} {R_DELAY_inst/axis_data_count[14]} {R_DELAY_inst/axis_data_count[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list BTNC_IBUF ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list new_sample ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list R_DELAY_inst_n_2 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list R_DELAY_inst_n_3 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list R_DELAY_inst_n_4 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list R_DELAY_inst_n_5 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list R_DELAY_inst_n_6 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list R_DELAY_inst_n_7 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe11]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe11]
+connect_debug_port u_ila_0/probe11 [get_nets [list R_DELAY_inst_n_8 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe12]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe12]
+connect_debug_port u_ila_0/probe12 [get_nets [list R_DELAY_inst_n_9 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe13]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe13]
+connect_debug_port u_ila_0/probe13 [get_nets [list R_DELAY_inst_n_10 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe14]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe14]
+connect_debug_port u_ila_0/probe14 [get_nets [list R_DELAY_inst_n_11 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe15]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe15]
+connect_debug_port u_ila_0/probe15 [get_nets [list R_DELAY_inst_n_12 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe16]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe16]
+connect_debug_port u_ila_0/probe16 [get_nets [list R_DELAY_inst_n_13 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe17]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe17]
+connect_debug_port u_ila_0/probe17 [get_nets [list R_DELAY_inst_n_14 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe18]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe18]
+connect_debug_port u_ila_0/probe18 [get_nets [list R_DELAY_inst_n_15 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe19]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe19]
+connect_debug_port u_ila_0/probe19 [get_nets [list R_DELAY_inst_n_16 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe20]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe20]
+connect_debug_port u_ila_0/probe20 [get_nets [list R_DELAY_inst_n_17 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe21]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe21]
+connect_debug_port u_ila_0/probe21 [get_nets [list R_DELAY_inst_n_18 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe22]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe22]
+connect_debug_port u_ila_0/probe22 [get_nets [list R_DELAY_inst_n_19 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe23]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe23]
+connect_debug_port u_ila_0/probe23 [get_nets [list R_DELAY_inst_n_20 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe24]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe24]
+connect_debug_port u_ila_0/probe24 [get_nets [list R_DELAY_inst_n_21 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe25]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe25]
+connect_debug_port u_ila_0/probe25 [get_nets [list R_DELAY_inst_n_22 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe26]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe26]
+connect_debug_port u_ila_0/probe26 [get_nets [list R_DELAY_inst_n_23 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe27]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe27]
+connect_debug_port u_ila_0/probe27 [get_nets [list R_DELAY_inst_n_24 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe28]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe28]
+connect_debug_port u_ila_0/probe28 [get_nets [list R_DELAY_inst_n_25 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe29]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe29]
+connect_debug_port u_ila_0/probe29 [get_nets [list R_DELAY_inst_n_26 ]]
+save_constraints -force
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+close_design
+open_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+file mkdir /home/neya/work/tusur/gproject/sound/project_1/project_1.srcs/constrs_1/new
+close [ open /home/neya/work/tusur/gproject/sound/project_1/project_1.srcs/constrs_1/new/dbg.xdc w ]
+add_files -fileset constrs_1 /home/neya/work/tusur/gproject/sound/project_1/project_1.srcs/constrs_1/new/dbg.xdc
+set_property target_constrs_file /home/neya/work/tusur/gproject/sound/project_1/project_1.srcs/constrs_1/new/dbg.xdc [current_fileset -constrset]
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 65536 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 2 [get_debug_cores u_ila_0 ]
+endgroup
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list i_audio/i_clocking/CLK_48 ]]
+set_property port_width 16 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {R_DELAY_inst/count[0]} {R_DELAY_inst/count[1]} {R_DELAY_inst/count[2]} {R_DELAY_inst/count[3]} {R_DELAY_inst/count[4]} {R_DELAY_inst/count[5]} {R_DELAY_inst/count[6]} {R_DELAY_inst/count[7]} {R_DELAY_inst/count[8]} {R_DELAY_inst/count[9]} {R_DELAY_inst/count[10]} {R_DELAY_inst/count[11]} {R_DELAY_inst/count[12]} {R_DELAY_inst/count[13]} {R_DELAY_inst/count[14]} {R_DELAY_inst/count[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 24 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {R_DELAY_inst/i_dat[0]} {R_DELAY_inst/i_dat[1]} {R_DELAY_inst/i_dat[2]} {R_DELAY_inst/i_dat[3]} {R_DELAY_inst/i_dat[4]} {R_DELAY_inst/i_dat[5]} {R_DELAY_inst/i_dat[6]} {R_DELAY_inst/i_dat[7]} {R_DELAY_inst/i_dat[8]} {R_DELAY_inst/i_dat[9]} {R_DELAY_inst/i_dat[10]} {R_DELAY_inst/i_dat[11]} {R_DELAY_inst/i_dat[12]} {R_DELAY_inst/i_dat[13]} {R_DELAY_inst/i_dat[14]} {R_DELAY_inst/i_dat[15]} {R_DELAY_inst/i_dat[16]} {R_DELAY_inst/i_dat[17]} {R_DELAY_inst/i_dat[18]} {R_DELAY_inst/i_dat[19]} {R_DELAY_inst/i_dat[20]} {R_DELAY_inst/i_dat[21]} {R_DELAY_inst/i_dat[22]} {R_DELAY_inst/i_dat[23]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 24 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {R_DELAY_inst/o_dat[0]} {R_DELAY_inst/o_dat[1]} {R_DELAY_inst/o_dat[2]} {R_DELAY_inst/o_dat[3]} {R_DELAY_inst/o_dat[4]} {R_DELAY_inst/o_dat[5]} {R_DELAY_inst/o_dat[6]} {R_DELAY_inst/o_dat[7]} {R_DELAY_inst/o_dat[8]} {R_DELAY_inst/o_dat[9]} {R_DELAY_inst/o_dat[10]} {R_DELAY_inst/o_dat[11]} {R_DELAY_inst/o_dat[12]} {R_DELAY_inst/o_dat[13]} {R_DELAY_inst/o_dat[14]} {R_DELAY_inst/o_dat[15]} {R_DELAY_inst/o_dat[16]} {R_DELAY_inst/o_dat[17]} {R_DELAY_inst/o_dat[18]} {R_DELAY_inst/o_dat[19]} {R_DELAY_inst/o_dat[20]} {R_DELAY_inst/o_dat[21]} {R_DELAY_inst/o_dat[22]} {R_DELAY_inst/o_dat[23]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list R_DELAY_inst/i_rst ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list R_DELAY_inst/i_val ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list R_DELAY_inst/o_val ]]
+save_constraints
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 16384 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 2 [get_debug_cores u_ila_0 ]
+endgroup
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list i_audio/i_clocking/CLK_48 ]]
+set_property port_width 16 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {R_DELAY_inst/count[0]} {R_DELAY_inst/count[1]} {R_DELAY_inst/count[2]} {R_DELAY_inst/count[3]} {R_DELAY_inst/count[4]} {R_DELAY_inst/count[5]} {R_DELAY_inst/count[6]} {R_DELAY_inst/count[7]} {R_DELAY_inst/count[8]} {R_DELAY_inst/count[9]} {R_DELAY_inst/count[10]} {R_DELAY_inst/count[11]} {R_DELAY_inst/count[12]} {R_DELAY_inst/count[13]} {R_DELAY_inst/count[14]} {R_DELAY_inst/count[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 24 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {R_DELAY_inst/i_dat[0]} {R_DELAY_inst/i_dat[1]} {R_DELAY_inst/i_dat[2]} {R_DELAY_inst/i_dat[3]} {R_DELAY_inst/i_dat[4]} {R_DELAY_inst/i_dat[5]} {R_DELAY_inst/i_dat[6]} {R_DELAY_inst/i_dat[7]} {R_DELAY_inst/i_dat[8]} {R_DELAY_inst/i_dat[9]} {R_DELAY_inst/i_dat[10]} {R_DELAY_inst/i_dat[11]} {R_DELAY_inst/i_dat[12]} {R_DELAY_inst/i_dat[13]} {R_DELAY_inst/i_dat[14]} {R_DELAY_inst/i_dat[15]} {R_DELAY_inst/i_dat[16]} {R_DELAY_inst/i_dat[17]} {R_DELAY_inst/i_dat[18]} {R_DELAY_inst/i_dat[19]} {R_DELAY_inst/i_dat[20]} {R_DELAY_inst/i_dat[21]} {R_DELAY_inst/i_dat[22]} {R_DELAY_inst/i_dat[23]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 24 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {R_DELAY_inst/o_dat[0]} {R_DELAY_inst/o_dat[1]} {R_DELAY_inst/o_dat[2]} {R_DELAY_inst/o_dat[3]} {R_DELAY_inst/o_dat[4]} {R_DELAY_inst/o_dat[5]} {R_DELAY_inst/o_dat[6]} {R_DELAY_inst/o_dat[7]} {R_DELAY_inst/o_dat[8]} {R_DELAY_inst/o_dat[9]} {R_DELAY_inst/o_dat[10]} {R_DELAY_inst/o_dat[11]} {R_DELAY_inst/o_dat[12]} {R_DELAY_inst/o_dat[13]} {R_DELAY_inst/o_dat[14]} {R_DELAY_inst/o_dat[15]} {R_DELAY_inst/o_dat[16]} {R_DELAY_inst/o_dat[17]} {R_DELAY_inst/o_dat[18]} {R_DELAY_inst/o_dat[19]} {R_DELAY_inst/o_dat[20]} {R_DELAY_inst/o_dat[21]} {R_DELAY_inst/o_dat[22]} {R_DELAY_inst/o_dat[23]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list R_DELAY_inst/i_rst ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list R_DELAY_inst/i_val ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list R_DELAY_inst/o_val ]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/neya/work/tusur/gproject/sound/project_1/project_1.runs/impl_1/action.bit} [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {/home/neya/work/tusur/gproject/sound/project_1/project_1.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {/home/neya/work/tusur/gproject/sound/project_1/project_1.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {/home/neya/work/tusur/gproject/sound/project_1/project_1.runs/impl_1/action.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 16384 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 2 [get_debug_cores u_ila_0 ]
+endgroup
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list i_audio/i_clocking/CLK_48 ]]
+set_property port_width 24 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {R_DELAY_inst/o_dat[0]} {R_DELAY_inst/o_dat[1]} {R_DELAY_inst/o_dat[2]} {R_DELAY_inst/o_dat[3]} {R_DELAY_inst/o_dat[4]} {R_DELAY_inst/o_dat[5]} {R_DELAY_inst/o_dat[6]} {R_DELAY_inst/o_dat[7]} {R_DELAY_inst/o_dat[8]} {R_DELAY_inst/o_dat[9]} {R_DELAY_inst/o_dat[10]} {R_DELAY_inst/o_dat[11]} {R_DELAY_inst/o_dat[12]} {R_DELAY_inst/o_dat[13]} {R_DELAY_inst/o_dat[14]} {R_DELAY_inst/o_dat[15]} {R_DELAY_inst/o_dat[16]} {R_DELAY_inst/o_dat[17]} {R_DELAY_inst/o_dat[18]} {R_DELAY_inst/o_dat[19]} {R_DELAY_inst/o_dat[20]} {R_DELAY_inst/o_dat[21]} {R_DELAY_inst/o_dat[22]} {R_DELAY_inst/o_dat[23]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 24 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {R_DELAY_inst/i_dat[0]} {R_DELAY_inst/i_dat[1]} {R_DELAY_inst/i_dat[2]} {R_DELAY_inst/i_dat[3]} {R_DELAY_inst/i_dat[4]} {R_DELAY_inst/i_dat[5]} {R_DELAY_inst/i_dat[6]} {R_DELAY_inst/i_dat[7]} {R_DELAY_inst/i_dat[8]} {R_DELAY_inst/i_dat[9]} {R_DELAY_inst/i_dat[10]} {R_DELAY_inst/i_dat[11]} {R_DELAY_inst/i_dat[12]} {R_DELAY_inst/i_dat[13]} {R_DELAY_inst/i_dat[14]} {R_DELAY_inst/i_dat[15]} {R_DELAY_inst/i_dat[16]} {R_DELAY_inst/i_dat[17]} {R_DELAY_inst/i_dat[18]} {R_DELAY_inst/i_dat[19]} {R_DELAY_inst/i_dat[20]} {R_DELAY_inst/i_dat[21]} {R_DELAY_inst/i_dat[22]} {R_DELAY_inst/i_dat[23]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 16 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {R_DELAY_inst/count[0]} {R_DELAY_inst/count[1]} {R_DELAY_inst/count[2]} {R_DELAY_inst/count[3]} {R_DELAY_inst/count[4]} {R_DELAY_inst/count[5]} {R_DELAY_inst/count[6]} {R_DELAY_inst/count[7]} {R_DELAY_inst/count[8]} {R_DELAY_inst/count[9]} {R_DELAY_inst/count[10]} {R_DELAY_inst/count[11]} {R_DELAY_inst/count[12]} {R_DELAY_inst/count[13]} {R_DELAY_inst/count[14]} {R_DELAY_inst/count[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list R_DELAY_inst/i_rst ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list R_DELAY_inst/i_val ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list R_DELAY_inst/o_val ]]
+save_constraints
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {/home/neya/work/tusur/gproject/sound/project_1/project_1.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {/home/neya/work/tusur/gproject/sound/project_1/project_1.runs/impl_1/action.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property CONTROL.CAPTURE_MODE ALWAYS [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+set_property CONTROL.CAPTURE_MODE BASIC [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+set_property CAPTURE_COMPARE_VALUE eq1'b1 [get_hw_probes R_DELAY_inst/i_val -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+archive_project /home/neya/work/tusur/gproject/sound/audio_echo.xpr.zip -force
