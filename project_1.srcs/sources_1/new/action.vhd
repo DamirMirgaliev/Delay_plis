@@ -56,6 +56,7 @@ architecture Behavioral of action is
     signal btncd : std_logic := '0';    
     signal state : std_logic := '0';
     
+    
     COMPONENT audio_top
     Port ( clk_100  : in    STD_LOGIC; -- 100 mhz input clock 
         AC_ADR0  : out   STD_LOGIC; -- contol signals to audio chip
@@ -67,6 +68,8 @@ architecture Behavioral of action is
         AC_MCLK  : out   STD_LOGIC;
         AC_SCK   : out   STD_LOGIC;
         AC_SDA   : inout STD_LOGIC;
+        
+        
 
         hphone_l  : in STD_LOGIC_VECTOR(23 downto 0);
         hphone_l_valid : in std_logic;
@@ -187,15 +190,14 @@ begin
         hphone_r_valid <= new_sample;
         btncd <=btnc;                  
         btncsum <= btnc and not btncd; 
-            if btncsum = '0' then                      
-                state <= '1';
-            else
-                state <= '0';
+        if btnc = '1' then                    
+           state <= not state;
             end if;
         
             if state = '0' then
                 hphone_l <= line_in_l;
                 hphone_r <= line_in_r;
+                btncsum <= '0';                
             else
                 hphone_l <= std_logic_vector(shift_right(signed(line_in_l), 1) + shift_right(signed(line_in_l_delayed), 1));
                 hphone_r <= std_logic_vector(shift_right(signed(line_in_r), 1) + shift_right(signed(line_in_r_delayed), 1));

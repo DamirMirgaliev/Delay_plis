@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Wed Jun 12 02:12:48 2024">
+<application name="pa" timeStamp="Thu Sep 05 18:52:47 2024">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="5e9060d356b94354b20c57113ad69288" type="ProjectID"/>
-<property name="ProjectIteration" value="44" type="ProjectIteration"/>
+<property name="ProjectIteration" value="47" type="ProjectIteration"/>
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
@@ -17,10 +17,10 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
 </item>
 <item name="Java Command Handlers">
-<property name="AddSources" value="15" type="JavaHandler"/>
+<property name="AddSources" value="17" type="JavaHandler"/>
 <property name="ArchiveProject" value="1" type="JavaHandler"/>
 <property name="AutoConnectTarget" value="8" type="JavaHandler"/>
-<property name="CoreView" value="5" type="JavaHandler"/>
+<property name="CoreView" value="6" type="JavaHandler"/>
 <property name="CreateBlockDesign" value="2" type="JavaHandler"/>
 <property name="CreateHardwareDashboards" value="1" type="JavaHandler"/>
 <property name="CustomizeCore" value="4" type="JavaHandler"/>
@@ -43,12 +43,12 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="RecustomizeCore" value="14" type="JavaHandler"/>
 <property name="RefreshDevice" value="2" type="JavaHandler"/>
 <property name="RunBitgen" value="18" type="JavaHandler"/>
-<property name="RunImplementation" value="30" type="JavaHandler"/>
+<property name="RunImplementation" value="33" type="JavaHandler"/>
 <property name="RunSchematic" value="7" type="JavaHandler"/>
-<property name="RunSynthesis" value="30" type="JavaHandler"/>
+<property name="RunSynthesis" value="32" type="JavaHandler"/>
 <property name="RunTrigger" value="7" type="JavaHandler"/>
 <property name="RunTriggerImmediate" value="4" type="JavaHandler"/>
-<property name="SaveFileProxyHandler" value="8" type="JavaHandler"/>
+<property name="SaveFileProxyHandler" value="10" type="JavaHandler"/>
 <property name="SetTargetConstrFile" value="1" type="JavaHandler"/>
 <property name="ShowPowerEstimation" value="2" type="JavaHandler"/>
 <property name="ShowPropertyEditor" value="2" type="JavaHandler"/>
@@ -61,15 +61,61 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ViewTaskSynthesis" value="10" type="JavaHandler"/>
 </item>
 <item name="Gui Resources Info">
-<property name="PAResourceEtoH.GettingStartedView_RECENT_PROJECTS, C:/Users/User/Documents/project_1/project_1.xpr, 0" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.MainMenuMgr_EDIT, Edit" value="2" type="GuiResourceData"/>
-<property name="PAResourceItoN.MainMenuMgr_FILE, File" value="6" type="GuiResourceData"/>
-<property name="PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, Open Recent File" value="1" type="GuiResourceData"/>
+<property name="FINISH, Finish" value="1" type="GuiResourceData"/>
+<property name="NEXT, Next " value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, Rattling" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, VHDL, 3" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS,  ; in ; false ; 0 ; 0, 0, in, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, in, 0, Direction, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_ADD_SOURCES, Add Sources..." value="2" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Rattling - Behavioral (Rattling.vhd" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, action - Behavioral (action.vhd" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Project Manager, IP Catalog], 4, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_IP_CATALOG, IP Catalog" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, Add Files..." value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, Add" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_CREATE_FILE, Create File" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.StateMonitor_CANCEL, Cancel" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.StateMonitor_RESET_STEP, Reset Step" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="3" type="GuiResourceData"/>
+<property name="Rattling.vhd, 2, 109" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 100, 37" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 103, 38" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 112, 141" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 119, 42" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 132, 95" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 143, 106" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 151, 98" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 155, 125" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 160, 141" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 163, 83" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 167, 114" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 167, 96" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 174, 153" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 177, 197" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 182, 214" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 192, 175" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 196, 130" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 197, 118" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 215, 231" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 243, 192" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 246, 196" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 271, 141" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 272, 207" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 276, 160" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 285, 157" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 457, 112" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 458, 107" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 460, 110" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 65, 183" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 72, 175" value="1" type="GuiResourceData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="39" type="GuiMode"/>
+<property name="GuiMode" value="41" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="31" type="TclMode"/>
+<property name="TclMode" value="33" type="TclMode"/>
 </item>
 </section>
 </application>

@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date         : Wed Jun 05 16:30:57 2024
+| Date         : Thu Sep 05 09:38:44 2024
 | Host         : DESKTOP-UIUARBH running 64-bit major release  (build 9200)
 | Command      : report_utilization -file action_utilization_synth.rpt -pb action_utilization_synth.pb
 | Design       : action
@@ -152,10 +152,10 @@ Table of Contents
 | FDRE       |  488 |        Flop & Latch |
 | LUT4       |  128 |                 LUT |
 | LUT6       |   72 |                 LUT |
-| LUT2       |   63 |                 LUT |
+| LUT2       |   62 |                 LUT |
 | LUT5       |   27 |                 LUT |
 | LUT1       |   18 |                 LUT |
-| LUT3       |   16 |                 LUT |
+| LUT3       |   17 |                 LUT |
 | CARRY4     |   16 |          CarryLogic |
 | OBUF       |    5 |                  IO |
 | IBUF       |    5 |                  IO |
