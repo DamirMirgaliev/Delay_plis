@@ -14,8 +14,14 @@ set_property parent.project_path C:/Users/User/Documents/project_1/project_1.xpr
 set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
+add_files {{C:/Users/User/Desktop/GPO FIR/LPF.coe}}
+add_files {{C:/Users/User/Desktop/GPO FIR/HPF.coe}}
 add_files -quiet c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/axis_data_fifo_0/axis_data_fifo_0.dcp
 set_property used_in_implementation false [get_files c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/axis_data_fifo_0/axis_data_fifo_0.dcp]
+add_files -quiet c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_LPF_128t_b16_Z7000/Xfir_LPF_128t_b16_Z7000.dcp
+set_property used_in_implementation false [get_files c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_LPF_128t_b16_Z7000/Xfir_LPF_128t_b16_Z7000.dcp]
+add_files -quiet c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_HPF_128t_b16_Z700/Xfir_HPF_128t_b16_Z700.dcp
+set_property used_in_implementation false [get_files c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_HPF_128t_b16_Z700/Xfir_HPF_128t_b16_Z700.dcp]
 read_vhdl -library xil_defaultlib {
   C:/Users/User/Documents/project_1/project_1.srcs/sources_1/imports/hdl/i3c2.vhd
   C:/Users/User/Documents/project_1/project_1.srcs/sources_1/imports/hdl/adau1761_configuraiton_data.vhd
@@ -24,10 +30,13 @@ read_vhdl -library xil_defaultlib {
   C:/Users/User/Documents/project_1/project_1.srcs/sources_1/imports/hdl/ADAU1761_interface.vhd
   C:/Users/User/Documents/project_1/project_1.srcs/sources_1/imports/hdl/clocking.vhd
   C:/Users/User/Documents/project_1/project_1.srcs/sources_1/imports/hdl/adau1761_izedboard.vhd
+  C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/EQ_LPF.vhd
+  C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/EQ_HPF.vhd
   C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/fifo_delay.vhd
   C:/Users/User/Documents/project_1/project_1.srcs/sources_1/imports/hdl/audio_top.vhd
   C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd
 }
+read_vhdl -vhdl2008 -library xil_defaultlib C:/Users/User/Downloads/button.vhd
 foreach dcp [get_files -quiet -all *.dcp] {
   set_property used_in_implementation false $dcp
 }

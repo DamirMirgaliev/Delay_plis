@@ -50,3 +50,18 @@ set_property IOSTANDARD LVCMOS33 [get_ports AC_ADR1]
 set_property PACKAGE_PIN P16 [get_ports BTNC]
 set_property IOSTANDARD LVCMOS33 [get_ports BTNC]
 
+# Knopka up
+set_property PACKAGE_PIN T18 [get_ports BTNU]
+set_property IOSTANDARD LVCMOS33 [get_ports BTNU]
+
+# Knopka down
+set_property PACKAGE_PIN R16 [get_ports BTND]
+set_property IOSTANDARD LVCMOS33 [get_ports BTND]
+
+# Knopka left
+set_property PACKAGE_PIN N15 [get_ports BTNL]
+set_property IOSTANDARD LVCMOS33 [get_ports BTNL]
+
+# Knopka right
+set_property PACKAGE_PIN R18 [get_ports BTNR]
+set_property IOSTANDARD LVCMOS33 [get_ports BTNR]

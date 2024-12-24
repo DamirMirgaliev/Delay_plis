@@ -1,0 +1,1 @@
+--relax --debug typical --mt auto -L xil_defaultlib -L xpm -L xbip_utils_v3_0_6 -L axi_utils_v2_0_2 -L fir_compiler_v7_2_6 -L unisims_ver -L unimacro_ver -L secureip --snapshot Xfir_HPF_128t_b16_Z700 xil_defaultlib.Xfir_HPF_128t_b16_Z700 xil_defaultlib.glbl -log elaborate.log
