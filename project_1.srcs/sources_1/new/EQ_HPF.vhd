@@ -14,7 +14,7 @@ entity EQ_HPF is
         H_i_val      : in  std_logic;
         H_i_dat      : in  std_logic_vector(H_DAT_WIDTH -1 downto 0);
         H_o_val      : out std_logic;
-        H_o_dat      : out std_logic_vector(H_DAT_WIDTH -1 downto 0)
+        H_o_dat      : out std_logic_vector(23 downto 0)
     );
 end EQ_HPF;
 
@@ -38,7 +38,7 @@ architecture Behavioral of EQ_HPF is
     
     signal H_aclk    : STD_LOGIC;
     signal H_stvalid : std_logic;
-    signal H_stdata  : std_logic_vector(15 DOWNTO 0);
+    signal H_stdata  : std_logic_vector(H_DAT_WIDTH -1 DOWNTO 0);
     signal H_mtvalid : std_logic;
     signal H_mtdata  : std_logic_vector(39 DOWNTO 0);     
     
@@ -72,7 +72,7 @@ begin
         fir_compiler_v7_2_6 : Xfir_HPF_128t_b16_Z700 
     port map(
         aclk => H_i_aclk,
-        s_axis_data_tdata => H_stdata,
+        s_axis_data_tdata  => H_stdata,
         s_axis_data_tvalid => H_stvalid,
         s_axis_data_tready => open,
         m_axis_data_tdata  => H_mtdata,

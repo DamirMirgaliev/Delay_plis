@@ -1,0 +1,8 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  "C:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" --include "../../../project_1.ip_user_files/ipstatic/axis_infrastructure_v1_1_0/hdl/verilog"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

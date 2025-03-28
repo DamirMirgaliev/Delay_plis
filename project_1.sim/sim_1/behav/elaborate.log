@@ -1,0 +1,64 @@
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto bd2aa3789f9e40d3bbcb1e6e3598d820 --debug typical --relax --mt 2 -L xil_defaultlib -L xpm -L xbip_utils_v3_0_6 -L axi_utils_v2_0_2 -L fir_compiler_v7_2_6 -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_EQ_HPF_behav xil_defaultlib.tb_EQ_HPF xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [C:/Users/User/Documents/project_1/project_1.ip_user_files/ipstatic/xbip_utils_v3_0_6/hdl/xbip_utils_v3_0_vh_rfs.vhd:1889]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [C:/Users/User/Documents/project_1/project_1.ip_user_files/ipstatic/xbip_utils_v3_0_6/hdl/xbip_utils_v3_0_vh_rfs.vhd:1890]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [C:/Users/User/Documents/project_1/project_1.ip_user_files/ipstatic/xbip_utils_v3_0_6/hdl/xbip_utils_v3_0_vh_rfs.vhd:1882]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [C:/Users/User/Documents/project_1/project_1.ip_user_files/ipstatic/xbip_utils_v3_0_6/hdl/xbip_utils_v3_0_vh_rfs.vhd:1883]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package std.textio
+Compiling package xbip_utils_v3_0_6.xbip_utils_v3_0_6_pkg
+Compiling package fir_compiler_v7_2_6.fir_compiler_v7_2_6_viv_comp
+Compiling package ieee.std_logic_textio
+Compiling package fir_compiler_v7_2_6.globals_pkg
+Compiling package fir_compiler_v7_2_6.components
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_2.global_util_pkg
+Compiling package axi_utils_v2_0_2.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling module xil_defaultlib.glbl
+Compiling architecture xilinx of entity axi_utils_v2_0_2.glb_srl_fifo [\glb_srl_fifo(width=16,has_ifx=t...]
+Compiling architecture xilinx of entity axi_utils_v2_0_2.glb_ifx_slave [\glb_ifx_slave(width=16,has_ifx=...]
+Compiling architecture synth of entity fir_compiler_v7_2_6.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_6.delay [\delay(c_delay_len=1,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_6.delay [\delay(c_delay_len=3,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_6.sp_mem [\sp_mem(c_xdevicefamily="zynq",c...]
+Compiling architecture synth of entity fir_compiler_v7_2_6.filt_mem [\filt_mem(c_xdevicefamily="zynq"...]
+Compiling architecture synth of entity fir_compiler_v7_2_6.sp_mem [\sp_mem(c_xdevicefamily="zynq",c...]
+Compiling architecture synth of entity fir_compiler_v7_2_6.filt_mem [\filt_mem(c_xdevicefamily="zynq"...]
+Compiling architecture synth of entity fir_compiler_v7_2_6.cntrl_delay [\cntrl_delay(c_delay_len=0,c_mem...]
+Compiling architecture synth of entity fir_compiler_v7_2_6.delay [\delay(c_delay_len=1,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_6.buff [\buff(c_xdevicefamily="zynq",c_d...]
+Compiling architecture synth of entity fir_compiler_v7_2_6.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_6.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(mask="11111111111111111...]
+Compiling architecture synth of entity fir_compiler_v7_2_6.calc [\calc(c_xdevicefamily="zynq",c_p...]
+Compiling architecture synth of entity fir_compiler_v7_2_6.addsub_mult_accum [\addsub_mult_accum(c_xdevicefami...]
+Compiling architecture synth of entity fir_compiler_v7_2_6.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_6.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_6.delay [\delay(c_delay_len=2,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_6.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_6.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_6.delay [\delay(c_delay_len=3,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_6.delay [\delay(c_delay_len=6,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_6.single_rate [\single_rate(c_xdevicefamily="zy...]
+Compiling architecture synth of entity fir_compiler_v7_2_6.fir_compiler_v7_2_6_viv [\fir_compiler_v7_2_6_viv(c_xdevi...]
+Compiling architecture xilinx of entity fir_compiler_v7_2_6.fir_compiler_v7_2_6 [\fir_compiler_v7_2_6(c_xdevicefa...]
+Compiling architecture xfir_hpf_128t_b16_z700_arch of entity xil_defaultlib.Xfir_HPF_128t_b16_Z700 [xfir_hpf_128t_b16_z700_default]
+Compiling architecture behavioral of entity xil_defaultlib.EQ_HPF [eq_hpf_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_eq_hpf
+Built simulation snapshot tb_EQ_HPF_behav

@@ -1,0 +1,168 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Wed Mar 26 20:39:11 2025
+# Process ID: 8944
+# Current directory: C:/Users/User/Documents/project_1/project_1.runs/impl_1
+# Command line: vivado.exe -log action.vdi -applog -messageDb vivado.pb -mode batch -source action.tcl -notrace
+# Log file: C:/Users/User/Documents/project_1/project_1.runs/impl_1/action.vdi
+# Journal file: C:/Users/User/Documents/project_1/project_1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source action.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/axis_data_fifo_0/axis_data_fifo_0.dcp' for cell 'L_DELAY_inst/i_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_HPF_128t_b16_Z700/Xfir_HPF_128t_b16_Z700.dcp' for cell 'L_EQ_HPF_inst/fir_compiler_v7_2_6'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_LPF_128t_b16_Z7000/Xfir_LPF_128t_b16_Z7000.dcp' for cell 'L_EQ_LPF_inst/fir_compiler_v7_2_6'
+INFO: [Netlist 29-17] Analyzing 126 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.2
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/axis_data_fifo_0/axis_data_fifo_0/axis_data_fifo_0.xdc] for cell 'L_DELAY_inst/i_fifo/inst'
+Finished Parsing XDC File [c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/axis_data_fifo_0/axis_data_fifo_0/axis_data_fifo_0.xdc] for cell 'L_DELAY_inst/i_fifo/inst'
+Parsing XDC File [c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/axis_data_fifo_0/axis_data_fifo_0/axis_data_fifo_0.xdc] for cell 'R_DELAY_inst/i_fifo/inst'
+Finished Parsing XDC File [c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/axis_data_fifo_0/axis_data_fifo_0/axis_data_fifo_0.xdc] for cell 'R_DELAY_inst/i_fifo/inst'
+Parsing XDC File [c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_LPF_128t_b16_Z7000/fir_compiler_v7_2_6/constraints/fir_compiler_v7_2.xdc] for cell 'L_EQ_LPF_inst/fir_compiler_v7_2_6/U0'
+Finished Parsing XDC File [c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_LPF_128t_b16_Z7000/fir_compiler_v7_2_6/constraints/fir_compiler_v7_2.xdc] for cell 'L_EQ_LPF_inst/fir_compiler_v7_2_6/U0'
+Parsing XDC File [c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_LPF_128t_b16_Z7000/fir_compiler_v7_2_6/constraints/fir_compiler_v7_2.xdc] for cell 'R_EQ_LPF_inst/fir_compiler_v7_2_6/U0'
+Finished Parsing XDC File [c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_LPF_128t_b16_Z7000/fir_compiler_v7_2_6/constraints/fir_compiler_v7_2.xdc] for cell 'R_EQ_LPF_inst/fir_compiler_v7_2_6/U0'
+Parsing XDC File [c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_HPF_128t_b16_Z700/fir_compiler_v7_2_6/constraints/fir_compiler_v7_2.xdc] for cell 'L_EQ_HPF_inst/fir_compiler_v7_2_6/U0'
+Finished Parsing XDC File [c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_HPF_128t_b16_Z700/fir_compiler_v7_2_6/constraints/fir_compiler_v7_2.xdc] for cell 'L_EQ_HPF_inst/fir_compiler_v7_2_6/U0'
+Parsing XDC File [c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_HPF_128t_b16_Z700/fir_compiler_v7_2_6/constraints/fir_compiler_v7_2.xdc] for cell 'R_EQ_HPF_inst/fir_compiler_v7_2_6/U0'
+Finished Parsing XDC File [c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_HPF_128t_b16_Z700/fir_compiler_v7_2_6/constraints/fir_compiler_v7_2.xdc] for cell 'R_EQ_HPF_inst/fir_compiler_v7_2_6/U0'
+Parsing XDC File [C:/Users/User/Documents/project_1/project_1.srcs/constrs_1/zed_audio.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/Users/User/Documents/project_1/project_1.srcs/constrs_1/zed_audio.xdc:4]
+INFO: [Timing 38-2] Deriving generated clocks [C:/Users/User/Documents/project_1/project_1.srcs/constrs_1/zed_audio.xdc:4]
+get_clocks: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 928.496 ; gain = 436.598
+Finished Parsing XDC File [C:/Users/User/Documents/project_1/project_1.srcs/constrs_1/zed_audio.xdc]
+Parsing XDC File [C:/Users/User/Documents/project_1/project_1.srcs/constrs_1/new/dbg.xdc]
+Finished Parsing XDC File [C:/Users/User/Documents/project_1/project_1.srcs/constrs_1/new/dbg.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/axis_data_fifo_0/axis_data_fifo_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/axis_data_fifo_0/axis_data_fifo_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_LPF_128t_b16_Z7000/Xfir_LPF_128t_b16_Z7000.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_LPF_128t_b16_Z7000/Xfir_LPF_128t_b16_Z7000.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_HPF_128t_b16_Z700/Xfir_HPF_128t_b16_Z700.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_HPF_128t_b16_Z700/Xfir_HPF_128t_b16_Z700.dcp'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+
+link_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 928.551 ; gain = 722.188
+INFO: [Vivado_Tcl 4-424] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_HPF[0] has multiple drivers: L_EQ_HPF_inst/i_24/O, line_in_l_HPF_reg[0]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_HPF[10] has multiple drivers: L_EQ_HPF_inst/i_14/O, line_in_l_HPF_reg[10]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_HPF[11] has multiple drivers: L_EQ_HPF_inst/i_13/O, line_in_l_HPF_reg[11]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_HPF[12] has multiple drivers: L_EQ_HPF_inst/i_12/O, line_in_l_HPF_reg[12]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_HPF[13] has multiple drivers: L_EQ_HPF_inst/i_11/O, line_in_l_HPF_reg[13]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_HPF[14] has multiple drivers: L_EQ_HPF_inst/i_10/O, line_in_l_HPF_reg[14]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_HPF[15] has multiple drivers: L_EQ_HPF_inst/i_9/O, line_in_l_HPF_reg[15]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_HPF[16] has multiple drivers: L_EQ_HPF_inst/i_8/O, line_in_l_HPF_reg[16]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_HPF[17] has multiple drivers: L_EQ_HPF_inst/i_7/O, line_in_l_HPF_reg[17]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_HPF[18] has multiple drivers: L_EQ_HPF_inst/i_6/O, line_in_l_HPF_reg[18]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_HPF[19] has multiple drivers: L_EQ_HPF_inst/i_5/O, line_in_l_HPF_reg[19]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_HPF[1] has multiple drivers: L_EQ_HPF_inst/i_23/O, line_in_l_HPF_reg[1]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_HPF[20] has multiple drivers: L_EQ_HPF_inst/i_4/O, line_in_l_HPF_reg[20]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_HPF[21] has multiple drivers: L_EQ_HPF_inst/i_3/O, line_in_l_HPF_reg[21]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_HPF[22] has multiple drivers: L_EQ_HPF_inst/i_2/O, line_in_l_HPF_reg[22]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_HPF[23] has multiple drivers: L_EQ_HPF_inst/i_1/O, line_in_l_HPF_reg[23]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_HPF[2] has multiple drivers: L_EQ_HPF_inst/i_22/O, line_in_l_HPF_reg[2]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_HPF[3] has multiple drivers: L_EQ_HPF_inst/i_21/O, line_in_l_HPF_reg[3]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_HPF[4] has multiple drivers: L_EQ_HPF_inst/i_20/O, line_in_l_HPF_reg[4]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_HPF[5] has multiple drivers: L_EQ_HPF_inst/i_19/O, line_in_l_HPF_reg[5]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_HPF[6] has multiple drivers: L_EQ_HPF_inst/i_18/O, line_in_l_HPF_reg[6]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_HPF[7] has multiple drivers: L_EQ_HPF_inst/i_17/O, line_in_l_HPF_reg[7]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_HPF[8] has multiple drivers: L_EQ_HPF_inst/i_16/O, line_in_l_HPF_reg[8]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_HPF[9] has multiple drivers: L_EQ_HPF_inst/i_15/O, line_in_l_HPF_reg[9]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_LPF[0] has multiple drivers: L_EQ_LPF_inst/i_24/O, line_in_l_LPF_reg[0]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_LPF[10] has multiple drivers: L_EQ_LPF_inst/i_14/O, line_in_l_LPF_reg[10]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_LPF[11] has multiple drivers: L_EQ_LPF_inst/i_13/O, line_in_l_LPF_reg[11]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_LPF[12] has multiple drivers: L_EQ_LPF_inst/i_12/O, line_in_l_LPF_reg[12]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_LPF[13] has multiple drivers: L_EQ_LPF_inst/i_11/O, line_in_l_LPF_reg[13]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_LPF[14] has multiple drivers: L_EQ_LPF_inst/i_10/O, line_in_l_LPF_reg[14]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_LPF[15] has multiple drivers: L_EQ_LPF_inst/i_9/O, line_in_l_LPF_reg[15]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_LPF[16] has multiple drivers: L_EQ_LPF_inst/i_8/O, line_in_l_LPF_reg[16]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_LPF[17] has multiple drivers: L_EQ_LPF_inst/i_7/O, line_in_l_LPF_reg[17]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_LPF[18] has multiple drivers: L_EQ_LPF_inst/i_6/O, line_in_l_LPF_reg[18]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_LPF[19] has multiple drivers: L_EQ_LPF_inst/i_5/O, line_in_l_LPF_reg[19]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_LPF[1] has multiple drivers: L_EQ_LPF_inst/i_23/O, line_in_l_LPF_reg[1]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_LPF[20] has multiple drivers: L_EQ_LPF_inst/i_4/O, line_in_l_LPF_reg[20]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_LPF[21] has multiple drivers: L_EQ_LPF_inst/i_3/O, line_in_l_LPF_reg[21]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_LPF[22] has multiple drivers: L_EQ_LPF_inst/i_2/O, line_in_l_LPF_reg[22]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_LPF[23] has multiple drivers: L_EQ_LPF_inst/i_1/O, line_in_l_LPF_reg[23]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_LPF[2] has multiple drivers: L_EQ_LPF_inst/i_22/O, line_in_l_LPF_reg[2]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_LPF[3] has multiple drivers: L_EQ_LPF_inst/i_21/O, line_in_l_LPF_reg[3]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_LPF[4] has multiple drivers: L_EQ_LPF_inst/i_20/O, line_in_l_LPF_reg[4]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_LPF[5] has multiple drivers: L_EQ_LPF_inst/i_19/O, line_in_l_LPF_reg[5]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_LPF[6] has multiple drivers: L_EQ_LPF_inst/i_18/O, line_in_l_LPF_reg[6]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_LPF[7] has multiple drivers: L_EQ_LPF_inst/i_17/O, line_in_l_LPF_reg[7]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_LPF[8] has multiple drivers: L_EQ_LPF_inst/i_16/O, line_in_l_LPF_reg[8]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_l_LPF[9] has multiple drivers: L_EQ_LPF_inst/i_15/O, line_in_l_LPF_reg[9]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_HPF[0] has multiple drivers: R_EQ_HPF_inst/i_24/O, line_in_r_HPF_reg[0]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_HPF[10] has multiple drivers: R_EQ_HPF_inst/i_14/O, line_in_r_HPF_reg[10]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_HPF[11] has multiple drivers: R_EQ_HPF_inst/i_13/O, line_in_r_HPF_reg[11]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_HPF[12] has multiple drivers: R_EQ_HPF_inst/i_12/O, line_in_r_HPF_reg[12]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_HPF[13] has multiple drivers: R_EQ_HPF_inst/i_11/O, line_in_r_HPF_reg[13]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_HPF[14] has multiple drivers: R_EQ_HPF_inst/i_10/O, line_in_r_HPF_reg[14]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_HPF[15] has multiple drivers: R_EQ_HPF_inst/i_9/O, line_in_r_HPF_reg[15]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_HPF[16] has multiple drivers: R_EQ_HPF_inst/i_8/O, line_in_r_HPF_reg[16]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_HPF[17] has multiple drivers: R_EQ_HPF_inst/i_7/O, line_in_r_HPF_reg[17]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_HPF[18] has multiple drivers: R_EQ_HPF_inst/i_6/O, line_in_r_HPF_reg[18]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_HPF[19] has multiple drivers: R_EQ_HPF_inst/i_5/O, line_in_r_HPF_reg[19]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_HPF[1] has multiple drivers: R_EQ_HPF_inst/i_23/O, line_in_r_HPF_reg[1]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_HPF[20] has multiple drivers: R_EQ_HPF_inst/i_4/O, line_in_r_HPF_reg[20]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_HPF[21] has multiple drivers: R_EQ_HPF_inst/i_3/O, line_in_r_HPF_reg[21]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_HPF[22] has multiple drivers: R_EQ_HPF_inst/i_2/O, line_in_r_HPF_reg[22]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_HPF[23] has multiple drivers: R_EQ_HPF_inst/i_1/O, line_in_r_HPF_reg[23]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_HPF[2] has multiple drivers: R_EQ_HPF_inst/i_22/O, line_in_r_HPF_reg[2]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_HPF[3] has multiple drivers: R_EQ_HPF_inst/i_21/O, line_in_r_HPF_reg[3]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_HPF[4] has multiple drivers: R_EQ_HPF_inst/i_20/O, line_in_r_HPF_reg[4]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_HPF[5] has multiple drivers: R_EQ_HPF_inst/i_19/O, line_in_r_HPF_reg[5]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_HPF[6] has multiple drivers: R_EQ_HPF_inst/i_18/O, line_in_r_HPF_reg[6]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_HPF[7] has multiple drivers: R_EQ_HPF_inst/i_17/O, line_in_r_HPF_reg[7]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_HPF[8] has multiple drivers: R_EQ_HPF_inst/i_16/O, line_in_r_HPF_reg[8]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_HPF[9] has multiple drivers: R_EQ_HPF_inst/i_15/O, line_in_r_HPF_reg[9]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_LPF[0] has multiple drivers: R_EQ_LPF_inst/i_24/O, line_in_r_LPF_reg[0]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_LPF[10] has multiple drivers: R_EQ_LPF_inst/i_14/O, line_in_r_LPF_reg[10]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_LPF[11] has multiple drivers: R_EQ_LPF_inst/i_13/O, line_in_r_LPF_reg[11]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_LPF[12] has multiple drivers: R_EQ_LPF_inst/i_12/O, line_in_r_LPF_reg[12]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_LPF[13] has multiple drivers: R_EQ_LPF_inst/i_11/O, line_in_r_LPF_reg[13]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_LPF[14] has multiple drivers: R_EQ_LPF_inst/i_10/O, line_in_r_LPF_reg[14]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_LPF[15] has multiple drivers: R_EQ_LPF_inst/i_9/O, line_in_r_LPF_reg[15]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_LPF[16] has multiple drivers: R_EQ_LPF_inst/i_8/O, line_in_r_LPF_reg[16]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_LPF[17] has multiple drivers: R_EQ_LPF_inst/i_7/O, line_in_r_LPF_reg[17]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_LPF[18] has multiple drivers: R_EQ_LPF_inst/i_6/O, line_in_r_LPF_reg[18]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_LPF[19] has multiple drivers: R_EQ_LPF_inst/i_5/O, line_in_r_LPF_reg[19]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_LPF[1] has multiple drivers: R_EQ_LPF_inst/i_23/O, line_in_r_LPF_reg[1]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_LPF[20] has multiple drivers: R_EQ_LPF_inst/i_4/O, line_in_r_LPF_reg[20]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_LPF[21] has multiple drivers: R_EQ_LPF_inst/i_3/O, line_in_r_LPF_reg[21]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_LPF[22] has multiple drivers: R_EQ_LPF_inst/i_2/O, line_in_r_LPF_reg[22]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_LPF[23] has multiple drivers: R_EQ_LPF_inst/i_1/O, line_in_r_LPF_reg[23]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_LPF[2] has multiple drivers: R_EQ_LPF_inst/i_22/O, line_in_r_LPF_reg[2]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_LPF[3] has multiple drivers: R_EQ_LPF_inst/i_21/O, line_in_r_LPF_reg[3]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_LPF[4] has multiple drivers: R_EQ_LPF_inst/i_20/O, line_in_r_LPF_reg[4]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_LPF[5] has multiple drivers: R_EQ_LPF_inst/i_19/O, line_in_r_LPF_reg[5]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_LPF[6] has multiple drivers: R_EQ_LPF_inst/i_18/O, line_in_r_LPF_reg[6]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_LPF[7] has multiple drivers: R_EQ_LPF_inst/i_17/O, line_in_r_LPF_reg[7]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_LPF[8] has multiple drivers: R_EQ_LPF_inst/i_16/O, line_in_r_LPF_reg[8]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net line_in_r_LPF[9] has multiple drivers: R_EQ_LPF_inst/i_15/O, line_in_r_LPF_reg[9]/Q.
+INFO: [Project 1-461] DRC finished with 96 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.276 . Memory (MB): peak = 928.551 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+24 Infos, 0 Warnings, 0 Critical Warnings and 97 Errors encountered.
+opt_design failed
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 26 20:39:48 2025...

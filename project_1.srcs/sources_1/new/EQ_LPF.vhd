@@ -13,7 +13,7 @@ port (
     L_i_val      : in  std_logic;
     L_i_dat      : in  std_logic_vector(L_DAT_WIDTH -1 downto 0);
     L_o_val      : out std_logic;
-    L_o_dat      : out std_logic_vector(L_DAT_WIDTH -1 downto 0)
+    L_o_dat      : out std_logic_vector(23 downto 0)
 );
 end EQ_LPF;
 

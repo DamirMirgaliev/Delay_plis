@@ -50,8 +50,7 @@ architecture Behavioral of action is
         hphone_l  : in STD_LOGIC_VECTOR(23 downto 0);
         hphone_l_valid : in std_logic;
         hphone_r  : in STD_LOGIC_VECTOR(23 downto 0);
-        hphone_r_valid_dummy : in std_logic;
-        
+        hphone_r_valid_dummy : in std_logic;        
         line_in_l    : out STD_LOGIC_VECTOR(23 downto 0);
         line_in_r    : out STD_LOGIC_VECTOR(23 downto 0);
         
@@ -84,7 +83,7 @@ architecture Behavioral of action is
         H_i_val      : in  std_logic;
         H_i_dat      : in  std_logic_vector(H_DAT_WIDTH -1 downto 0);
         H_o_val      : out std_logic;
-        H_o_dat      : out std_logic_vector(H_DAT_WIDTH -1 downto 0)
+        H_o_dat      : out std_logic_vector(23 downto 0)
     );
     END COMPONENT EQ_HPF;
     
@@ -97,7 +96,7 @@ architecture Behavioral of action is
         L_i_val      : in  std_logic;
         L_i_dat      : in  std_logic_vector(L_DAT_WIDTH -1 downto 0);
         L_o_val      : out std_logic;
-        L_o_dat      : out std_logic_vector(L_DAT_WIDTH -1 downto 0)
+        L_o_dat      : out std_logic_vector(23 downto 0)
     );
     END COMPONENT EQ_LPF;
     
@@ -122,14 +121,15 @@ architecture Behavioral of action is
 
     signal counter : unsigned (5 downto 0);
     signal hphone_l, hphone_r : std_logic_vector (23 downto 0);
+    signal hphone_l_D, hphone_r_D : std_logic_vector (23 downto 8);    
     signal hphone_l_valid, hphone_r_valid: std_logic;
     signal new_sample : std_logic;
     signal sample_clk_48k: std_logic;
     signal line_in_l, line_in_r : std_logic_vector (23 downto 0);
     signal line_in_l_delayed, line_in_r_delayed : std_logic_vector (23 downto 0);
     signal line_in_l_HPF, line_in_r_HPF : std_logic_vector (23 downto 0);
-    signal l_HPF, r_HPF : std_logic_vector (23 downto 0);
     signal line_in_l_LPF, line_in_r_LPF : std_logic_vector (23 downto 0);
+    signal temp_line_in_l_HPF, temp_line_in_r_HPF, temp_line_in_l_LPF, temp_line_in_r_LPF : std_logic_vector(23 downto 8);
     signal line_in_l_EQ, line_in_r_EQ : std_logic_vector (23 downto 0);
     
     signal Central_button_short, Central_button_long : STD_LOGIC;
@@ -241,56 +241,62 @@ begin
         
     R_EQ_HPF_inst: EQ_HPF
     generic map(
-        H_DAT_WIDTH => hphone_r'length)
+        H_DAT_WIDTH => hphone_r_D'length)
     port map(
         H_i_aclk => clk_100_buffered,
         H_i_val => new_sample,
-        H_i_dat => line_in_r_delayed,
+        H_i_dat => line_in_r_delayed(23 downto 8),
         H_o_val => open,
-        H_o_dat => line_in_r_HPF); 
+        H_o_dat => line_in_r_HPF(23 downto 0)); 
         
     L_EQ_HPF_inst: EQ_HPF
     generic map(
-        H_DAT_WIDTH => hphone_l'length)
+        H_DAT_WIDTH => hphone_l_D'length)
     port map(
         H_i_aclk => clk_100_buffered,
         H_i_val => new_sample,
-        H_i_dat => line_in_l_delayed,
+        H_i_dat => line_in_l_delayed(23 downto 8),
         H_o_val => open,
-        H_o_dat => line_in_l_HPF); 
+        H_o_dat => line_in_l_HPF(23 downto 0));
         
     R_EQ_LPF_inst: EQ_LPF
         generic map(
-            L_DAT_WIDTH => hphone_r'length)
+            L_DAT_WIDTH => hphone_r_D'length)
         port map(
             L_i_aclk => clk_100_buffered,
             L_i_val => new_sample,
-            L_i_dat => line_in_r_delayed,
+            L_i_dat => line_in_r_delayed(23 downto 8),
             L_o_val => open,
-            L_o_dat => line_in_r_HPF); 
+            L_o_dat => line_in_r_LPF(23 downto 0)); 
             
     L_EQ_LPF_inst: EQ_LPF
         generic map(
-            L_DAT_WIDTH => hphone_l'length)
+            L_DAT_WIDTH => hphone_l_D'length)
         port map(
             L_i_aclk => clk_100_buffered,
             L_i_val => new_sample,
-            L_i_dat => line_in_l_delayed,
+            L_i_dat => line_in_l_delayed(23 downto 8),
             L_o_val => open,
-            L_o_dat => line_in_l_HPF);           
+            L_o_dat => line_in_l_LPF(23 downto 0));           
 
 READY_proc: process(clk_100_buffered)
 begin
 --        if btn1_temp /= btn1 then
 --            btn1 <= btn1_temp;
-
+--        line_in_l_HPF(23 downto 8) <= temp_line_in_l_HPF;
+--        line_in_r_HPF(23 downto 8) <= temp_line_in_r_HPF;
+--        line_in_l_LPF(23 downto 8) <= temp_line_in_l_LPF;
+--        line_in_r_LPF(23 downto 8) <= temp_line_in_r_LPF;
+--        line_in_l_HPF(7 downto 0) <= (others => '0');
+--        line_in_r_HPF(7 downto 0) <= (others => '0');
+--        line_in_l_LPF(7 downto 0) <= (others => '0');
+--        line_in_r_LPF(7 downto 0) <= (others => '0');
+                        
         if rising_edge(sample_clk_48k) then
             hphone_l_valid <= new_sample;
             hphone_r_valid <= new_sample;
             
-            if Left_button_short = '1' and current_volume_LPF = 0 then
-                line_in_l_LPF <= line_in_l_LPF;
-                line_in_r_LPF <= line_in_r_LPF;                
+            if Left_button_short = '1' and current_volume_LPF = 0 then            
                 current_volume_LPF <= current_volume_LPF + 1;
             elsif Left_button_short = '1' and current_volume_LPF = 1 then -- +30Äá
                 line_in_l_LPF <= std_logic_vector(signed(line_in_l_LPF) + "00011110");
@@ -308,9 +314,7 @@ begin
                 current_volume_LPF <= 0;                                           
             end if;
             
-            if Right_button_short = '1' and current_volume_HPF = 0 then
-                line_in_l_HPF <= line_in_l_HPF;
-                line_in_r_HPF <= line_in_r_HPF;                
+            if Right_button_short = '1' and current_volume_HPF = 0 then    
                 current_volume_HPF <= current_volume_HPF + 1;
             elsif Right_button_short = '1' and current_volume_HPF = 1 then -- +30Äá
                 line_in_l_HPF <= std_logic_vector(signed(line_in_l_HPF) + "00011110");
@@ -328,9 +332,9 @@ begin
                 current_volume_HPF <= 0;                                           
             end if;
             
-            if Up_button_short = '1' then
-                line_in_l_EQ <= std_logic_vector(signed(line_in_l_LPF) + signed(line_in_l_HPF));
-                line_in_r_EQ <= std_logic_vector(signed(line_in_r_LPF) + signed(line_in_r_HPF));                
+            if Up_button_short = '1' then             
+                line_in_l_EQ <= std_logic_vector(shift_right(signed(line_in_l_LPF), 1) + shift_right(signed(line_in_l_HPF), 1));
+                line_in_r_EQ <= std_logic_vector(shift_right(signed(line_in_r_LPF), 1) + shift_right(signed(line_in_r_HPF), 1));
                 hphone_l <= std_logic_vector(shift_right(signed(line_in_l), 1) + shift_right(signed(line_in_l_EQ), 1));
                 hphone_r <= std_logic_vector(shift_right(signed(line_in_r), 1) + shift_right(signed(line_in_r_EQ), 1));    
             else

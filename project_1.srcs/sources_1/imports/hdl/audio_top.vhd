@@ -90,8 +90,8 @@ architecture Behavioral of audio_top is
 		AC_SCK :      OUT std_logic;
 		line_in_l :   OUT std_logic_vector(23 downto 0);
 		line_in_r :   OUT std_logic_vector(23 downto 0);
-        new_sample:   out   std_logic;
-        sw :          in std_logic_vector(1 downto 0);
+        new_sample:   out std_logic;
+        sw :          in  std_logic_vector(1 downto 0);
         active :      out std_logic_vector(1 downto 0)
 		);
 	END COMPONENT;

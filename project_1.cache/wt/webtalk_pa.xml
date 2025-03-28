@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Tue Dec 24 13:18:38 2024">
+<application name="pa" timeStamp="Wed Mar 26 21:05:29 2025">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="5e9060d356b94354b20c57113ad69288" type="ProjectID"/>
-<property name="ProjectIteration" value="50" type="ProjectIteration"/>
+<property name="ProjectIteration" value="69" type="ProjectIteration"/>
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
@@ -17,10 +17,10 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
 </item>
 <item name="Java Command Handlers">
-<property name="AddSources" value="26" type="JavaHandler"/>
+<property name="AddSources" value="30" type="JavaHandler"/>
 <property name="ArchiveProject" value="1" type="JavaHandler"/>
 <property name="AutoConnectTarget" value="8" type="JavaHandler"/>
-<property name="CoreView" value="16" type="JavaHandler"/>
+<property name="CoreView" value="18" type="JavaHandler"/>
 <property name="CreateBlockDesign" value="2" type="JavaHandler"/>
 <property name="CreateHardwareDashboards" value="1" type="JavaHandler"/>
 <property name="CustomizeCore" value="12" type="JavaHandler"/>
@@ -28,9 +28,10 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="EditDelete" value="13" type="JavaHandler"/>
 <property name="EditProperties" value="4" type="JavaHandler"/>
 <property name="EditRedo" value="1" type="JavaHandler"/>
-<property name="EditUndo" value="10" type="JavaHandler"/>
+<property name="EditUndo" value="17" type="JavaHandler"/>
 <property name="LaunchProgramFpga" value="11" type="JavaHandler"/>
 <property name="ManageCompositeTargets" value="1" type="JavaHandler"/>
+<property name="MoveToSimSet" value="1" type="JavaHandler"/>
 <property name="NewProject" value="1" type="JavaHandler"/>
 <property name="OpenFile" value="1" type="JavaHandler"/>
 <property name="OpenHardwareManager" value="21" type="JavaHandler"/>
@@ -39,57 +40,61 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="OpenSource" value="2" type="JavaHandler"/>
 <property name="OpenSrc" value="2" type="JavaHandler"/>
 <property name="ProgramDevice" value="10" type="JavaHandler"/>
-<property name="ProjectSettingsCmdHandler" value="14" type="JavaHandler"/>
-<property name="RecustomizeCore" value="27" type="JavaHandler"/>
+<property name="ProjectSettingsCmdHandler" value="15" type="JavaHandler"/>
+<property name="RecustomizeCore" value="42" type="JavaHandler"/>
 <property name="RefreshDevice" value="2" type="JavaHandler"/>
 <property name="RunBitgen" value="18" type="JavaHandler"/>
-<property name="RunImplementation" value="36" type="JavaHandler"/>
+<property name="RunImplementation" value="61" type="JavaHandler"/>
 <property name="RunSchematic" value="7" type="JavaHandler"/>
-<property name="RunSynthesis" value="36" type="JavaHandler"/>
+<property name="RunSynthesis" value="79" type="JavaHandler"/>
 <property name="RunTrigger" value="7" type="JavaHandler"/>
 <property name="RunTriggerImmediate" value="4" type="JavaHandler"/>
-<property name="SaveFileProxyHandler" value="28" type="JavaHandler"/>
+<property name="SaveFileProxyHandler" value="35" type="JavaHandler"/>
 <property name="SetTargetConstrFile" value="1" type="JavaHandler"/>
+<property name="SetTopNode" value="9" type="JavaHandler"/>
 <property name="ShowPowerEstimation" value="2" type="JavaHandler"/>
 <property name="ShowPropertyEditor" value="2" type="JavaHandler"/>
 <property name="ShowSource" value="2" type="JavaHandler"/>
-<property name="ShowView" value="31" type="JavaHandler"/>
+<property name="ShowView" value="88" type="JavaHandler"/>
+<property name="SimulationRestart" value="5" type="JavaHandler"/>
+<property name="SimulationRun" value="19" type="JavaHandler"/>
+<property name="SimulationRunAll" value="14" type="JavaHandler"/>
+<property name="SimulationRunForTime" value="45" type="JavaHandler"/>
 <property name="ToggleViewNavigator" value="2" type="JavaHandler"/>
 <property name="ViewLayoutCmd" value="1" type="JavaHandler"/>
-<property name="ViewTaskImplementation" value="6" type="JavaHandler"/>
-<property name="ViewTaskProjectManager" value="12" type="JavaHandler"/>
+<property name="ViewTaskImplementation" value="7" type="JavaHandler"/>
+<property name="ViewTaskProjectManager" value="14" type="JavaHandler"/>
 <property name="ViewTaskSynthesis" value="10" type="JavaHandler"/>
+<property name="WaveformSaveConfiguration" value="2" type="JavaHandler"/>
 </item>
 <item name="Gui Resources Info">
-<property name="EQ_HPF.vhd, 145, 78" value="1" type="GuiResourceData"/>
-<property name="EQ_HPF.vhd, 147, 125" value="1" type="GuiResourceData"/>
-<property name="EQ_HPF.vhd, 147, 92" value="1" type="GuiResourceData"/>
-<property name="EQ_HPF.vhd, 149, 113" value="1" type="GuiResourceData"/>
-<property name="EQ_HPF.vhd, 162, 192" value="1" type="GuiResourceData"/>
-<property name="EQ_HPF.vhd, 175, 92" value="1" type="GuiResourceData"/>
-<property name="EQ_HPF.vhd, 179, 244" value="1" type="GuiResourceData"/>
-<property name="EQ_HPF.vhd, 188, 165" value="1" type="GuiResourceData"/>
-<property name="EQ_HPF.vhd, 196, 146" value="1" type="GuiResourceData"/>
-<property name="EQ_HPF.vhd, 207, 202" value="1" type="GuiResourceData"/>
-<property name="EQ_HPF.vhd, 210, 77" value="1" type="GuiResourceData"/>
-<property name="EQ_HPF.vhd, 237, 151" value="1" type="GuiResourceData"/>
-<property name="EQ_HPF.vhd, 265, 97" value="1" type="GuiResourceData"/>
-<property name="EQ_HPF.vhd, 278, 190" value="1" type="GuiResourceData"/>
-<property name="EQ_HPF.vhd, 366, 155" value="1" type="GuiResourceData"/>
-<property name="EQ_HPF.vhd, 431, 145" value="1" type="GuiResourceData"/>
-<property name="EQ_HPF.vhd, 441, 199" value="1" type="GuiResourceData"/>
-<property name="EQ_HPF.vhd, 468, 147" value="1" type="GuiResourceData"/>
-<property name="EQ_HPF.vhd, 587, 38" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, action - Behavioral (action.vhd" value="2" type="GuiResourceData"/>
-<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Synthesis, synth_1, [Synth 8-285] failed synthesizing module 'EQ_HPF' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/EQ_HPF.vhd:21]. ], 3" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Synthesis, synth_1, [Synth 8-285] failed synthesizing module 'EQ_HPF' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/EQ_HPF.vhd:21]. ], 3, true" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Synthesis, synth_1, [Synth 8-690] width mismatch in assignment; target has 16 bits, source has 24 bits [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/EQ_HPF.vhd:67]. ], 2, false" value="5" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Implementation, Opt Design, [DRC 23-20] Rule violation (MDRV-1" value="4" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Synthesis, synth_1, [Synth 8-3352] multi-driven net line_in_l_HPF[23] with 1st driver pin 'line_in_l_HPF_reg[23]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]. , [Synth 8-3352] multi-driven net line_in_l_HPF[0] with 1st driver pin 'line_in_l_HPF_reg[0]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]. ], 48, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Synthesis, synth_1, [Synth 8-3352] multi-driven net line_in_l_HPF[23] with 1st driver pin 'line_in_l_HPF_reg[23]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]. , [Synth 8-3352] multi-driven net line_in_l_HPF[0] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]. ], 49, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Synthesis, synth_1, [Synth 8-3352] multi-driven net line_in_l_HPF[23] with 1st driver pin 'line_in_l_HPF_reg[23]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]. ], 2" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Synthesis, synth_1, [Synth 8-3352] multi-driven net line_in_l_HPF[23] with 1st driver pin 'line_in_l_HPF_reg[23]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]. ], 2, true" value="1" type="GuiResourceData"/>
 <property name="RDIResource.BaseDialog_OK, OK" value="1" type="GuiResourceData"/>
+<property name="RDIResourceCommand.RDICommands_LINE_COMMENT, (String" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 0, 248" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 116, 175" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 2, 259" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 310, 178" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 380, 204" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 381, 240" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 382, 213" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 393, 230" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 396, 215" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 411, 223" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 420, 229" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 434, 231" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 439, 211" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 444, 219" value="1" type="GuiResourceData"/>
+<property name="action.vhd, 477, 199" value="1" type="GuiResourceData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="61" type="GuiMode"/>
+<property name="GuiMode" value="83" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="48" type="TclMode"/>
+<property name="TclMode" value="65" type="TclMode"/>
 </item>
 </section>
 </application>

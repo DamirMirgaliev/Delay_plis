@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1735020624">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1742996217">
   <File Type="PA-TCL" Name="action.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="action_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="action.vds"/>
@@ -66,14 +66,14 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Downloads/button.vhd">
-      <FileInfo SFType="VHDL2008">
+    <File Path="$PSRCDIR/sources_1/new/EQ_LPF.vhd">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/EQ_LPF.vhd">
-      <FileInfo>
+    <File Path="$PPRDIR/../../Downloads/button.vhd">
+      <FileInfo SFType="VHDL2008">
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -131,6 +131,27 @@
     </File>
     <File Path="$PPRDIR/../../Desktop/GPO FIR/HPF.coe">
       <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/TB_EQ_HPF.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/TB_Delay.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/TB_Button.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
