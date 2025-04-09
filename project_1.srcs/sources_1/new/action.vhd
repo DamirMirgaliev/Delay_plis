@@ -129,7 +129,7 @@ architecture Behavioral of action is
     signal line_in_l_delayed, line_in_r_delayed : std_logic_vector (23 downto 0);
     signal line_in_l_HPF, line_in_r_HPF : std_logic_vector (23 downto 0);
     signal line_in_l_LPF, line_in_r_LPF : std_logic_vector (23 downto 0);
-    signal temp_line_in_l_HPF, temp_line_in_r_HPF, temp_line_in_l_LPF, temp_line_in_r_LPF : std_logic_vector(23 downto 8);
+    signal temp_line_in_l_HPF, temp_line_in_r_HPF, temp_line_in_l_LPF, temp_line_in_r_LPF : std_logic_vector(23 downto 0);
     signal line_in_l_EQ, line_in_r_EQ : std_logic_vector (23 downto 0);
     
     signal Central_button_short, Central_button_long : STD_LOGIC;
@@ -241,41 +241,41 @@ begin
         
     R_EQ_HPF_inst: EQ_HPF
     generic map(
-        H_DAT_WIDTH => hphone_r_D'length)
+        H_DAT_WIDTH => hphone_r'length)
     port map(
         H_i_aclk => clk_100_buffered,
         H_i_val => new_sample,
-        H_i_dat => line_in_r_delayed(23 downto 8),
+        H_i_dat => line_in_r_delayed(23 downto 0),
         H_o_val => open,
         H_o_dat => line_in_r_HPF(23 downto 0)); 
         
     L_EQ_HPF_inst: EQ_HPF
     generic map(
-        H_DAT_WIDTH => hphone_l_D'length)
+        H_DAT_WIDTH => hphone_l'length)
     port map(
         H_i_aclk => clk_100_buffered,
         H_i_val => new_sample,
-        H_i_dat => line_in_l_delayed(23 downto 8),
+        H_i_dat => line_in_l_delayed(23 downto 0),
         H_o_val => open,
         H_o_dat => line_in_l_HPF(23 downto 0));
         
     R_EQ_LPF_inst: EQ_LPF
         generic map(
-            L_DAT_WIDTH => hphone_r_D'length)
+            L_DAT_WIDTH => hphone_r'length)
         port map(
             L_i_aclk => clk_100_buffered,
             L_i_val => new_sample,
-            L_i_dat => line_in_r_delayed(23 downto 8),
+            L_i_dat => line_in_r_delayed(23 downto 0),
             L_o_val => open,
             L_o_dat => line_in_r_LPF(23 downto 0)); 
             
     L_EQ_LPF_inst: EQ_LPF
         generic map(
-            L_DAT_WIDTH => hphone_l_D'length)
+            L_DAT_WIDTH => hphone_l'length)
         port map(
             L_i_aclk => clk_100_buffered,
             L_i_val => new_sample,
-            L_i_dat => line_in_l_delayed(23 downto 8),
+            L_i_dat => line_in_l_delayed(23 downto 0),
             L_o_val => open,
             L_o_dat => line_in_l_LPF(23 downto 0));           
 
@@ -283,10 +283,10 @@ READY_proc: process(clk_100_buffered)
 begin
 --        if btn1_temp /= btn1 then
 --            btn1 <= btn1_temp;
---        line_in_l_HPF(23 downto 8) <= temp_line_in_l_HPF;
---        line_in_r_HPF(23 downto 8) <= temp_line_in_r_HPF;
---        line_in_l_LPF(23 downto 8) <= temp_line_in_l_LPF;
---        line_in_r_LPF(23 downto 8) <= temp_line_in_r_LPF;
+        temp_line_in_l_HPF <= line_in_l_HPF;
+        temp_line_in_r_HPF <= line_in_r_HPF;
+        temp_line_in_l_LPF <= line_in_l_LPF;
+        temp_line_in_r_LPF <= line_in_r_LPF;
 --        line_in_l_HPF(7 downto 0) <= (others => '0');
 --        line_in_r_HPF(7 downto 0) <= (others => '0');
 --        line_in_l_LPF(7 downto 0) <= (others => '0');
@@ -299,16 +299,16 @@ begin
             if Left_button_short = '1' and current_volume_LPF = 0 then            
                 current_volume_LPF <= current_volume_LPF + 1;
             elsif Left_button_short = '1' and current_volume_LPF = 1 then -- +30Äá
-                line_in_l_LPF <= std_logic_vector(signed(line_in_l_LPF) + "00011110");
-                line_in_r_LPF <= std_logic_vector(signed(line_in_r_LPF) + "00011110");                
+                temp_line_in_l_LPF <= std_logic_vector(signed(temp_line_in_l_LPF) + "00011110");
+                temp_line_in_r_LPF <= std_logic_vector(signed(temp_line_in_r_LPF) + "00011110");                
                 current_volume_LPF <= current_volume_LPF + 1;     
             elsif Left_button_short = '1' and current_volume_LPF = 2 then -- -60Äá
-                line_in_l_LPF <= std_logic_vector(signed(line_in_l_LPF) - "00111100");
-                line_in_r_LPF <= std_logic_vector(signed(line_in_r_LPF) - "00111100");                
+                temp_line_in_l_LPF <= std_logic_vector(signed(temp_line_in_l_LPF) - "00111100");
+                temp_line_in_r_LPF <= std_logic_vector(signed(temp_line_in_r_LPF) - "00111100");                
                 current_volume_LPF <= current_volume_LPF + 1;
             elsif Left_button_short = '1' and current_volume_LPF = 3 then -- -60Äá
-                line_in_l_LPF <= std_logic_vector(signed(line_in_l_LPF) - "00111100");
-                line_in_r_LPF <= std_logic_vector(signed(line_in_r_LPF) - "00111100");             
+                temp_line_in_l_LPF <= std_logic_vector(signed(temp_line_in_l_LPF) - "00111100");
+                temp_line_in_r_LPF <= std_logic_vector(signed(temp_line_in_r_LPF) - "00111100");             
                 current_volume_LPF <= current_volume_LPF + 1;  
             elsif current_volume_LPF = 4 then
                 current_volume_LPF <= 0;                                           
@@ -317,24 +317,24 @@ begin
             if Right_button_short = '1' and current_volume_HPF = 0 then    
                 current_volume_HPF <= current_volume_HPF + 1;
             elsif Right_button_short = '1' and current_volume_HPF = 1 then -- +30Äá
-                line_in_l_HPF <= std_logic_vector(signed(line_in_l_HPF) + "00011110");
-                line_in_r_HPF <= std_logic_vector(signed(line_in_r_HPF) + "00011110");                
+                temp_line_in_l_HPF <= std_logic_vector(signed(temp_line_in_l_HPF) + "00011110");
+                temp_line_in_r_HPF <= std_logic_vector(signed(temp_line_in_r_HPF) + "00011110");                
                 current_volume_HPF <= current_volume_HPF + 1;     
             elsif Right_button_short = '1' and current_volume_HPF = 2 then -- -60Äá
-                line_in_l_HPF <= std_logic_vector(signed(line_in_l_HPF) - "00111100");
-                line_in_r_HPF <= std_logic_vector(signed(line_in_r_HPF) - "00111100");                
+                temp_line_in_l_HPF <= std_logic_vector(signed(temp_line_in_l_HPF) - "00111100");
+                temp_line_in_r_HPF <= std_logic_vector(signed(temp_line_in_r_HPF) - "00111100");                
                 current_volume_HPF <= current_volume_HPF + 1;
             elsif Right_button_short = '1' and current_volume_HPF = 3 then -- -60Äá
-                line_in_l_HPF <= std_logic_vector(signed(line_in_l_HPF) - "00111100");
-                line_in_r_HPF <= std_logic_vector(signed(line_in_r_HPF) - "00111100");                 
+                temp_line_in_l_HPF <= std_logic_vector(signed(temp_line_in_l_HPF) - "00111100");
+                temp_line_in_r_HPF <= std_logic_vector(signed(temp_line_in_r_HPF) - "00111100");                 
                 current_volume_HPF <= current_volume_HPF + 1;  
             elsif current_volume_HPF = 4 then
                 current_volume_HPF <= 0;                                           
             end if;
             
             if Up_button_short = '1' then             
-                line_in_l_EQ <= std_logic_vector(shift_right(signed(line_in_l_LPF), 1) + shift_right(signed(line_in_l_HPF), 1));
-                line_in_r_EQ <= std_logic_vector(shift_right(signed(line_in_r_LPF), 1) + shift_right(signed(line_in_r_HPF), 1));
+                line_in_l_EQ <= std_logic_vector(shift_right(signed(temp_line_in_l_LPF), 1) + shift_right(signed(temp_line_in_l_HPF), 1));
+                line_in_r_EQ <= std_logic_vector(shift_right(signed(temp_line_in_r_LPF), 1) + shift_right(signed(temp_line_in_r_HPF), 1));
                 hphone_l <= std_logic_vector(shift_right(signed(line_in_l), 1) + shift_right(signed(line_in_l_EQ), 1));
                 hphone_r <= std_logic_vector(shift_right(signed(line_in_r), 1) + shift_right(signed(line_in_r_EQ), 1));    
             else

@@ -1,4 +1,4 @@
-// (c) Copyright 1995-2024 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1995-2025 Xilinx, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
@@ -58,9 +58,9 @@ Xfir_LPF_128t_b16_Z7000 your_instance_name (
   .aclk(aclk),                              // input wire aclk
   .s_axis_data_tvalid(s_axis_data_tvalid),  // input wire s_axis_data_tvalid
   .s_axis_data_tready(s_axis_data_tready),  // output wire s_axis_data_tready
-  .s_axis_data_tdata(s_axis_data_tdata),    // input wire [15 : 0] s_axis_data_tdata
+  .s_axis_data_tdata(s_axis_data_tdata),    // input wire [23 : 0] s_axis_data_tdata
   .m_axis_data_tvalid(m_axis_data_tvalid),  // output wire m_axis_data_tvalid
-  .m_axis_data_tdata(m_axis_data_tdata)    // output wire [39 : 0] m_axis_data_tdata
+  .m_axis_data_tdata(m_axis_data_tdata)    // output wire [47 : 0] m_axis_data_tdata
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 

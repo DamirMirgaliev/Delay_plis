@@ -18,10 +18,10 @@ add_files {{C:/Users/User/Desktop/GPO FIR/LPF.coe}}
 add_files {{C:/Users/User/Desktop/GPO FIR/HPF.coe}}
 add_files -quiet c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/axis_data_fifo_0/axis_data_fifo_0.dcp
 set_property used_in_implementation false [get_files c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/axis_data_fifo_0/axis_data_fifo_0.dcp]
-add_files -quiet c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_LPF_128t_b16_Z7000/Xfir_LPF_128t_b16_Z7000.dcp
-set_property used_in_implementation false [get_files c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_LPF_128t_b16_Z7000/Xfir_LPF_128t_b16_Z7000.dcp]
-add_files -quiet c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_HPF_128t_b16_Z700/Xfir_HPF_128t_b16_Z700.dcp
-set_property used_in_implementation false [get_files c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_HPF_128t_b16_Z700/Xfir_HPF_128t_b16_Z700.dcp]
+add_files -quiet C:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_LPF_128t_b16_Z7000/Xfir_LPF_128t_b16_Z7000.dcp
+set_property used_in_implementation false [get_files C:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_LPF_128t_b16_Z7000/Xfir_LPF_128t_b16_Z7000.dcp]
+add_files -quiet C:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_HPF_128t_b16_Z700/Xfir_HPF_128t_b16_Z700.dcp
+set_property used_in_implementation false [get_files C:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_HPF_128t_b16_Z700/Xfir_HPF_128t_b16_Z700.dcp]
 read_vhdl -library xil_defaultlib {
   C:/Users/User/Documents/project_1/project_1.srcs/sources_1/imports/hdl/i3c2.vhd
   C:/Users/User/Documents/project_1/project_1.srcs/sources_1/imports/hdl/adau1761_configuraiton_data.vhd

@@ -7,14 +7,14 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity EQ_HPF is
     generic(
-        H_DAT_WIDTH : positive := 16
+        H_DAT_WIDTH : positive := 24
     );
     port (
         H_i_aclk     : in  std_logic;
         H_i_val      : in  std_logic;
         H_i_dat      : in  std_logic_vector(H_DAT_WIDTH -1 downto 0);
         H_o_val      : out std_logic;
-        H_o_dat      : out std_logic_vector(23 downto 0)
+        H_o_dat      : out std_logic_vector(H_DAT_WIDTH -1 downto 0)
     );
 end EQ_HPF;
 
@@ -22,12 +22,12 @@ architecture Behavioral of EQ_HPF is
 
     COMPONENT Xfir_HPF_128t_b16_Z700
     PORT (
-        s_axis_data_tdata : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+        s_axis_data_tdata : IN STD_LOGIC_VECTOR(23 DOWNTO 0);
         s_axis_data_tready  : OUT STD_LOGIC;
         s_axis_data_tvalid : IN STD_LOGIC;
         aclk : IN STD_LOGIC;
         m_axis_data_tvalid : OUT STD_LOGIC;
-        m_axis_data_tdata : OUT STD_LOGIC_VECTOR(39 DOWNTO 0)
+        m_axis_data_tdata : OUT STD_LOGIC_VECTOR(47 DOWNTO 0)
     );
     END COMPONENT;
     
@@ -40,7 +40,7 @@ architecture Behavioral of EQ_HPF is
     signal H_stvalid : std_logic;
     signal H_stdata  : std_logic_vector(H_DAT_WIDTH -1 DOWNTO 0);
     signal H_mtvalid : std_logic;
-    signal H_mtdata  : std_logic_vector(39 DOWNTO 0);     
+    signal H_mtdata  : std_logic_vector(47 DOWNTO 0);     
     
     attribute DONT_TOUCH : string;
     attribute DONT_TOUCH of H_i_val : signal is "true";

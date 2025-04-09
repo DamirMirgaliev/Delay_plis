@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2024 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2025 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -61,9 +61,9 @@ ENTITY Xfir_LPF_128t_b16_Z7000 IS
     aclk : IN STD_LOGIC;
     s_axis_data_tvalid : IN STD_LOGIC;
     s_axis_data_tready : OUT STD_LOGIC;
-    s_axis_data_tdata : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+    s_axis_data_tdata : IN STD_LOGIC_VECTOR(23 DOWNTO 0);
     m_axis_data_tvalid : OUT STD_LOGIC;
-    m_axis_data_tdata : OUT STD_LOGIC_VECTOR(39 DOWNTO 0)
+    m_axis_data_tdata : OUT STD_LOGIC_VECTOR(47 DOWNTO 0)
   );
 END Xfir_LPF_128t_b16_Z7000;
 
@@ -151,7 +151,7 @@ ARCHITECTURE Xfir_LPF_128t_b16_Z7000_arch OF Xfir_LPF_128t_b16_Z7000 IS
       s_axis_data_tready : OUT STD_LOGIC;
       s_axis_data_tlast : IN STD_LOGIC;
       s_axis_data_tuser : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-      s_axis_data_tdata : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+      s_axis_data_tdata : IN STD_LOGIC_VECTOR(23 DOWNTO 0);
       s_axis_config_tvalid : IN STD_LOGIC;
       s_axis_config_tready : OUT STD_LOGIC;
       s_axis_config_tlast : IN STD_LOGIC;
@@ -164,7 +164,7 @@ ARCHITECTURE Xfir_LPF_128t_b16_Z7000_arch OF Xfir_LPF_128t_b16_Z7000 IS
       m_axis_data_tready : IN STD_LOGIC;
       m_axis_data_tlast : OUT STD_LOGIC;
       m_axis_data_tuser : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
-      m_axis_data_tdata : OUT STD_LOGIC_VECTOR(39 DOWNTO 0);
+      m_axis_data_tdata : OUT STD_LOGIC_VECTOR(47 DOWNTO 0);
       event_s_data_tlast_missing : OUT STD_LOGIC;
       event_s_data_tlast_unexpected : OUT STD_LOGIC;
       event_s_data_chanid_incorrect : OUT STD_LOGIC;
@@ -205,22 +205,22 @@ BEGIN
       C_COL_PIPE_LEN => 4,
       C_COL_CONFIG => "1",
       C_OPTIMIZATION => 2046,
-      C_DATA_PATH_WIDTHS => "16",
-      C_DATA_IP_PATH_WIDTHS => "16",
-      C_DATA_PX_PATH_WIDTHS => "16",
-      C_DATA_WIDTH => 16,
-      C_COEF_PATH_WIDTHS => "16",
-      C_COEF_WIDTH => 16,
-      C_DATA_PATH_SRC => "0",
-      C_COEF_PATH_SRC => "0",
-      C_PX_PATH_SRC => "0",
-      C_DATA_PATH_SIGN => "0",
-      C_COEF_PATH_SIGN => "0",
-      C_ACCUM_PATH_WIDTHS => "35",
-      C_OUTPUT_WIDTH => 35,
-      C_OUTPUT_PATH_WIDTHS => "35",
-      C_ACCUM_OP_PATH_WIDTHS => "35",
-      C_EXT_MULT_CNFG => "none",
+      C_DATA_PATH_WIDTHS => "12,12",
+      C_DATA_IP_PATH_WIDTHS => "24",
+      C_DATA_PX_PATH_WIDTHS => "24",
+      C_DATA_WIDTH => 24,
+      C_COEF_PATH_WIDTHS => "24,24",
+      C_COEF_WIDTH => 24,
+      C_DATA_PATH_SRC => "0,1",
+      C_COEF_PATH_SRC => "0,0",
+      C_PX_PATH_SRC => "0,1",
+      C_DATA_PATH_SIGN => "1,0",
+      C_COEF_PATH_SIGN => "0,0",
+      C_ACCUM_PATH_WIDTHS => "32,31",
+      C_OUTPUT_WIDTH => 43,
+      C_OUTPUT_PATH_WIDTHS => "43",
+      C_ACCUM_OP_PATH_WIDTHS => "43",
+      C_EXT_MULT_CNFG => "0,1,0,12",
       C_DATA_PATH_PSAMP_SRC => "0",
       C_OP_PATH_PSAMP_SRC => "0",
       C_NUM_MADDS => 1,
@@ -237,17 +237,17 @@ BEGIN
       C_DATA_MEM_PACKING => 0,
       C_COEF_MEM_PACKING => 0,
       C_FILTS_PACKED => 0,
-      C_LATENCY => 71,
+      C_LATENCY => 74,
       C_HAS_ARESETn => 0,
       C_HAS_ACLKEN => 0,
       C_DATA_HAS_TLAST => 0,
       C_S_DATA_HAS_FIFO => 1,
       C_S_DATA_HAS_TUSER => 0,
-      C_S_DATA_TDATA_WIDTH => 16,
+      C_S_DATA_TDATA_WIDTH => 24,
       C_S_DATA_TUSER_WIDTH => 1,
       C_M_DATA_HAS_TREADY => 0,
       C_M_DATA_HAS_TUSER => 0,
-      C_M_DATA_TDATA_WIDTH => 40,
+      C_M_DATA_TDATA_WIDTH => 48,
       C_M_DATA_TUSER_WIDTH => 1,
       C_HAS_CONFIG_CHANNEL => 0,
       C_CONFIG_SYNC_MODE => 0,

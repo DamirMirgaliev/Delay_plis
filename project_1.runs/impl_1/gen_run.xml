@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1742996343">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1743438296">
+  <File Type="OPT-DCP" Name="action_opt.dcp"/>
   <File Type="ROUTE-STATUS-PB" Name="action_route_status.pb"/>
   <File Type="PA-TCL" Name="action.tcl"/>
-  <File Type="OPT-DCP" Name="action_opt.dcp"/>
-  <File Type="INIT-TIMING" Name="action_timing_summary_init.rpt"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="action_methodology_drc_opted.rpt"/>
   <File Type="RDI-RDI" Name="action.vdi"/>
   <File Type="PWROPT-DRC" Name="action_drc_pwropted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="action_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="action_timing_summary_init.rpt"/>
   <File Type="OPT-DRC" Name="action_drc_opted.rpt"/>
   <File Type="PWROPT-DCP" Name="action_pwropt.dcp"/>
   <File Type="OPT-HWDEF" Name="action.hwdef"/>
@@ -31,8 +31,8 @@
   <File Type="ROUTE-DRC" Name="action_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="action_drc_routed.pb"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="action_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="action_methodology_drc_routed.pb"/>
   <File Type="BG-BIT" Name="action.bit"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="action_methodology_drc_routed.pb"/>
   <File Type="ROUTE-PWR" Name="action_power_routed.rpt"/>
   <File Type="ROUTE-PWR-SUM" Name="action_power_summary_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="action_power_routed.rpx"/>
@@ -247,6 +247,6 @@
     <Step Id="write_bitstream"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="axis_data_fifo_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="Xfir_LPF_128t_b16_Z7000"/>
   <BlockFileSet Type="BlockSrcs" Name="Xfir_HPF_128t_b16_Z700"/>
+  <BlockFileSet Type="BlockSrcs" Name="Xfir_LPF_128t_b16_Z7000"/>
 </GenRun>

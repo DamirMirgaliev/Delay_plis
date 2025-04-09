@@ -6,14 +6,14 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity EQ_LPF is
     generic(
-    L_DAT_WIDTH : positive := 16
+    L_DAT_WIDTH : positive := 24
 );
 port (
     L_i_aclk      : in  std_logic;
     L_i_val      : in  std_logic;
     L_i_dat      : in  std_logic_vector(L_DAT_WIDTH -1 downto 0);
     L_o_val      : out std_logic;
-    L_o_dat      : out std_logic_vector(23 downto 0)
+    L_o_dat      : out std_logic_vector(L_DAT_WIDTH -1 downto 0)
 );
 end EQ_LPF;
 
@@ -21,12 +21,12 @@ architecture Behavioral of EQ_LPF is
 
     COMPONENT Xfir_LPF_128t_b16_Z7000
     PORT (
-        s_axis_data_tdata : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+        s_axis_data_tdata : IN STD_LOGIC_VECTOR(23 DOWNTO 0);
         s_axis_data_tready  : OUT STD_LOGIC;
         s_axis_data_tvalid : IN STD_LOGIC;
         aclk : IN STD_LOGIC;
         m_axis_data_tvalid : OUT STD_LOGIC;
-        m_axis_data_tdata : OUT STD_LOGIC_VECTOR(39 DOWNTO 0)
+        m_axis_data_tdata : OUT STD_LOGIC_VECTOR(47 DOWNTO 0)
     );
     END COMPONENT;
     
@@ -37,9 +37,9 @@ architecture Behavioral of EQ_LPF is
     
     signal L_aclk : STD_LOGIC;
     signal L_stvalid : std_logic;
-    signal L_stdata  : std_logic_vector(15 DOWNTO 0);
+    signal L_stdata  : std_logic_vector(23 DOWNTO 0);
     signal L_mtvalid : std_logic;
-    signal L_mtdata  : std_logic_vector(39 DOWNTO 0);  
+    signal L_mtdata  : std_logic_vector(47 DOWNTO 0);  
     
     attribute DONT_TOUCH : string;
     attribute DONT_TOUCH of L_i_val : signal is "true";

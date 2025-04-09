@@ -65,15 +65,15 @@
 // reloadable: 0
 // is_halfband: 0
 // quantization: 0
-// coeff_width: 16
+// coeff_width: 24
 // coeff_fract_width: 0
 // chan_seq: 0
 // num_channels: 1
 // num_paths: 1
-// data_width: 16
+// data_width: 24
 // data_fract_width: 0
 // output_rounding_mode: 0
-// output_width: 35
+// output_width: 43
 // output_fract_width: 0
 // config_method: 0
 
@@ -96,16 +96,16 @@ static xip_fir_v7_2_config gen_Xfir_LPF_128t_b16_Z7000_config() {
   config.reloadable          = 0;
   config.is_halfband         = 0;
   config.quantization        = XIP_FIR_INTEGER_COEFF;
-  config.coeff_width         = 16;
+  config.coeff_width         = 24;
   config.coeff_fract_width   = 0;
   config.chan_seq            = XIP_FIR_BASIC_CHAN_SEQ;
   config.num_channels        = 1;
   config.init_pattern        = Xfir_LPF_128t_b16_Z7000_chanpats[0];
   config.num_paths           = 1;
-  config.data_width          = 16;
+  config.data_width          = 24;
   config.data_fract_width    = 0;
   config.output_rounding_mode= XIP_FIR_FULL_PRECISION;
-  config.output_width        = 35;
+  config.output_width        = 43;
   config.output_fract_width  = 0,
   config.config_method       = XIP_FIR_CONFIG_SINGLE;
   return config;

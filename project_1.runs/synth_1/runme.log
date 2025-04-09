@@ -14,9 +14,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 6904 
+INFO: Helper process launched with PID 7556 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 267.520 ; gain = 60.777
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 266.832 ; gain = 60.039
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'action' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:34]
 INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:123]
@@ -151,16 +151,16 @@ INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [C:/Users/User
 INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/fifo_delay.vhd:37]
 INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/fifo_delay.vhd:70]
 INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/fifo_delay.vhd:70]
-INFO: [Synth 8-3491] module 'axis_data_fifo_0' declared at 'C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-9508-DESKTOP-UIUARBH/realtime/axis_data_fifo_0_stub.v:6' bound to instance 'i_fifo' of component 'axis_data_fifo_0' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/fifo_delay.vhd:114]
-INFO: [Synth 8-638] synthesizing module 'axis_data_fifo_0' [C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-9508-DESKTOP-UIUARBH/realtime/axis_data_fifo_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'axis_data_fifo_0' (10#1) [C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-9508-DESKTOP-UIUARBH/realtime/axis_data_fifo_0_stub.v:6]
+INFO: [Synth 8-3491] module 'axis_data_fifo_0' declared at 'C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-5056-DESKTOP-UIUARBH/realtime/axis_data_fifo_0_stub.v:6' bound to instance 'i_fifo' of component 'axis_data_fifo_0' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/fifo_delay.vhd:114]
+INFO: [Synth 8-638] synthesizing module 'axis_data_fifo_0' [C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-5056-DESKTOP-UIUARBH/realtime/axis_data_fifo_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'axis_data_fifo_0' (10#1) [C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-5056-DESKTOP-UIUARBH/realtime/axis_data_fifo_0_stub.v:6]
 INFO: [Synth 8-256] done synthesizing module 'fifo_delay' (11#1) [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/fifo_delay.vhd:43]
 	Parameter DAT_WIDTH bound to: 24 - type: integer 
 INFO: [Synth 8-3491] module 'fifo_delay' declared at 'C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/fifo_delay.vhd:27' bound to instance 'L_DELAY_inst' of component 'fifo_delay' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:231]
-	Parameter H_DAT_WIDTH bound to: 16 - type: integer 
+	Parameter H_DAT_WIDTH bound to: 24 - type: integer 
 INFO: [Synth 8-3491] module 'EQ_HPF' declared at 'C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/EQ_HPF.vhd:8' bound to instance 'R_EQ_HPF_inst' of component 'EQ_HPF' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:242]
 INFO: [Synth 8-638] synthesizing module 'EQ_HPF' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/EQ_HPF.vhd:21]
-	Parameter H_DAT_WIDTH bound to: 16 - type: integer 
+	Parameter H_DAT_WIDTH bound to: 24 - type: integer 
 INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/EQ_HPF.vhd:14]
 INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/EQ_HPF.vhd:14]
 INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/EQ_HPF.vhd:15]
@@ -169,16 +169,16 @@ INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [C:/Users/User
 INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/EQ_HPF.vhd:16]
 INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/EQ_HPF.vhd:17]
 INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/EQ_HPF.vhd:17]
-INFO: [Synth 8-3491] module 'Xfir_HPF_128t_b16_Z700' declared at 'C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-9508-DESKTOP-UIUARBH/realtime/Xfir_HPF_128t_b16_Z700_stub.v:6' bound to instance 'fir_compiler_v7_2_6' of component 'Xfir_HPF_128t_b16_Z700' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/EQ_HPF.vhd:72]
-INFO: [Synth 8-638] synthesizing module 'Xfir_HPF_128t_b16_Z700' [C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-9508-DESKTOP-UIUARBH/realtime/Xfir_HPF_128t_b16_Z700_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'Xfir_HPF_128t_b16_Z700' (12#1) [C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-9508-DESKTOP-UIUARBH/realtime/Xfir_HPF_128t_b16_Z700_stub.v:6]
+INFO: [Synth 8-3491] module 'Xfir_HPF_128t_b16_Z700' declared at 'C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-5056-DESKTOP-UIUARBH/realtime/Xfir_HPF_128t_b16_Z700_stub.v:6' bound to instance 'fir_compiler_v7_2_6' of component 'Xfir_HPF_128t_b16_Z700' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/EQ_HPF.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'Xfir_HPF_128t_b16_Z700' [C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-5056-DESKTOP-UIUARBH/realtime/Xfir_HPF_128t_b16_Z700_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'Xfir_HPF_128t_b16_Z700' (12#1) [C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-5056-DESKTOP-UIUARBH/realtime/Xfir_HPF_128t_b16_Z700_stub.v:6]
 INFO: [Synth 8-256] done synthesizing module 'EQ_HPF' (13#1) [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/EQ_HPF.vhd:21]
-	Parameter H_DAT_WIDTH bound to: 16 - type: integer 
+	Parameter H_DAT_WIDTH bound to: 24 - type: integer 
 INFO: [Synth 8-3491] module 'EQ_HPF' declared at 'C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/EQ_HPF.vhd:8' bound to instance 'L_EQ_HPF_inst' of component 'EQ_HPF' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:252]
-	Parameter L_DAT_WIDTH bound to: 16 - type: integer 
+	Parameter L_DAT_WIDTH bound to: 24 - type: integer 
 INFO: [Synth 8-3491] module 'EQ_LPF' declared at 'C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/EQ_LPF.vhd:7' bound to instance 'R_EQ_LPF_inst' of component 'EQ_LPF' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:262]
 INFO: [Synth 8-638] synthesizing module 'EQ_LPF' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/EQ_LPF.vhd:20]
-	Parameter L_DAT_WIDTH bound to: 16 - type: integer 
+	Parameter L_DAT_WIDTH bound to: 24 - type: integer 
 INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/EQ_LPF.vhd:13]
 INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/EQ_LPF.vhd:13]
 INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/EQ_LPF.vhd:14]
@@ -187,18 +187,22 @@ INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [C:/Users/User
 INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/EQ_LPF.vhd:15]
 INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/EQ_LPF.vhd:16]
 INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/EQ_LPF.vhd:16]
-INFO: [Synth 8-3491] module 'Xfir_LPF_128t_b16_Z7000' declared at 'C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-9508-DESKTOP-UIUARBH/realtime/Xfir_LPF_128t_b16_Z7000_stub.v:6' bound to instance 'fir_compiler_v7_2_6' of component 'Xfir_LPF_128t_b16_Z7000' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/EQ_LPF.vhd:91]
-INFO: [Synth 8-638] synthesizing module 'Xfir_LPF_128t_b16_Z7000' [C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-9508-DESKTOP-UIUARBH/realtime/Xfir_LPF_128t_b16_Z7000_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'Xfir_LPF_128t_b16_Z7000' (14#1) [C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-9508-DESKTOP-UIUARBH/realtime/Xfir_LPF_128t_b16_Z7000_stub.v:6]
+INFO: [Synth 8-3491] module 'Xfir_LPF_128t_b16_Z7000' declared at 'C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-5056-DESKTOP-UIUARBH/realtime/Xfir_LPF_128t_b16_Z7000_stub.v:6' bound to instance 'fir_compiler_v7_2_6' of component 'Xfir_LPF_128t_b16_Z7000' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/EQ_LPF.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'Xfir_LPF_128t_b16_Z7000' [C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-5056-DESKTOP-UIUARBH/realtime/Xfir_LPF_128t_b16_Z7000_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'Xfir_LPF_128t_b16_Z7000' (14#1) [C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-5056-DESKTOP-UIUARBH/realtime/Xfir_LPF_128t_b16_Z7000_stub.v:6]
 INFO: [Synth 8-256] done synthesizing module 'EQ_LPF' (15#1) [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/EQ_LPF.vhd:20]
-	Parameter L_DAT_WIDTH bound to: 16 - type: integer 
+	Parameter L_DAT_WIDTH bound to: 24 - type: integer 
 INFO: [Synth 8-3491] module 'EQ_LPF' declared at 'C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/EQ_LPF.vhd:7' bound to instance 'L_EQ_LPF_inst' of component 'EQ_LPF' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:272]
+WARNING: [Synth 8-614] signal 'line_in_l_HPF' is read in the process but is not in the sensitivity list [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:282]
+WARNING: [Synth 8-614] signal 'line_in_r_HPF' is read in the process but is not in the sensitivity list [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:282]
+WARNING: [Synth 8-614] signal 'line_in_l_LPF' is read in the process but is not in the sensitivity list [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:282]
+WARNING: [Synth 8-614] signal 'line_in_r_LPF' is read in the process but is not in the sensitivity list [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:282]
 WARNING: [Synth 8-614] signal 'sample_clk_48k' is read in the process but is not in the sensitivity list [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:282]
 INFO: [Synth 8-4471] merging register 'hphone_r_valid_reg' into 'hphone_l_valid_reg' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:169]
 INFO: [Synth 8-256] done synthesizing module 'action' (16#1) [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:34]
 WARNING: [Synth 8-3331] design audio_top has unconnected port hphone_r_valid_dummy
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 305.762 ; gain = 99.020
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 306.137 ; gain = 99.344
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -222,7 +226,7 @@ WARNING: [Synth 8-3295] tying undriven pin Inst_i3c2:inputs[4] to constant 0 [C:
 WARNING: [Synth 8-3295] tying undriven pin Inst_i3c2:inputs[3] to constant 0 [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/imports/hdl/i2c.vhd:62]
 WARNING: [Synth 8-3295] tying undriven pin Inst_i3c2:inputs[2] to constant 0 [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/imports/hdl/i2c.vhd:62]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 305.762 ; gain = 99.020
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 306.137 ; gain = 99.344
 ---------------------------------------------------------------------------------
 WARNING: [Project 1-560] Could not resolve non-primitive black box cell 'Xfir_HPF_128t_b16_Z700' instantiated as 'R_EQ_HPF_inst/fir_compiler_v7_2_6'. 2 instances of this cell are unresolved black boxes. [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/EQ_HPF.vhd:72]
 WARNING: [Project 1-560] Could not resolve non-primitive black box cell 'Xfir_LPF_128t_b16_Z7000' instantiated as 'R_EQ_LPF_inst/fir_compiler_v7_2_6'. 2 instances of this cell are unresolved black boxes. [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/EQ_LPF.vhd:91]
@@ -234,18 +238,18 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-9508-DESKTOP-UIUARBH/dcp/axis_data_fifo_0_in_context.xdc] for cell 'R_DELAY_inst/i_fifo'
-Finished Parsing XDC File [C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-9508-DESKTOP-UIUARBH/dcp/axis_data_fifo_0_in_context.xdc] for cell 'R_DELAY_inst/i_fifo'
-Parsing XDC File [C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-9508-DESKTOP-UIUARBH/dcp/axis_data_fifo_0_in_context.xdc] for cell 'L_DELAY_inst/i_fifo'
-Finished Parsing XDC File [C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-9508-DESKTOP-UIUARBH/dcp/axis_data_fifo_0_in_context.xdc] for cell 'L_DELAY_inst/i_fifo'
-Parsing XDC File [C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-9508-DESKTOP-UIUARBH/dcp_2/Xfir_LPF_128t_b16_Z7000_in_context.xdc] for cell 'R_EQ_LPF_inst/fir_compiler_v7_2_6'
-Finished Parsing XDC File [C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-9508-DESKTOP-UIUARBH/dcp_2/Xfir_LPF_128t_b16_Z7000_in_context.xdc] for cell 'R_EQ_LPF_inst/fir_compiler_v7_2_6'
-Parsing XDC File [C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-9508-DESKTOP-UIUARBH/dcp_2/Xfir_LPF_128t_b16_Z7000_in_context.xdc] for cell 'L_EQ_LPF_inst/fir_compiler_v7_2_6'
-Finished Parsing XDC File [C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-9508-DESKTOP-UIUARBH/dcp_2/Xfir_LPF_128t_b16_Z7000_in_context.xdc] for cell 'L_EQ_LPF_inst/fir_compiler_v7_2_6'
-Parsing XDC File [C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-9508-DESKTOP-UIUARBH/dcp_3/Xfir_HPF_128t_b16_Z700_in_context.xdc] for cell 'R_EQ_HPF_inst/fir_compiler_v7_2_6'
-Finished Parsing XDC File [C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-9508-DESKTOP-UIUARBH/dcp_3/Xfir_HPF_128t_b16_Z700_in_context.xdc] for cell 'R_EQ_HPF_inst/fir_compiler_v7_2_6'
-Parsing XDC File [C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-9508-DESKTOP-UIUARBH/dcp_3/Xfir_HPF_128t_b16_Z700_in_context.xdc] for cell 'L_EQ_HPF_inst/fir_compiler_v7_2_6'
-Finished Parsing XDC File [C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-9508-DESKTOP-UIUARBH/dcp_3/Xfir_HPF_128t_b16_Z700_in_context.xdc] for cell 'L_EQ_HPF_inst/fir_compiler_v7_2_6'
+Parsing XDC File [C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-5056-DESKTOP-UIUARBH/dcp/axis_data_fifo_0_in_context.xdc] for cell 'R_DELAY_inst/i_fifo'
+Finished Parsing XDC File [C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-5056-DESKTOP-UIUARBH/dcp/axis_data_fifo_0_in_context.xdc] for cell 'R_DELAY_inst/i_fifo'
+Parsing XDC File [C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-5056-DESKTOP-UIUARBH/dcp/axis_data_fifo_0_in_context.xdc] for cell 'L_DELAY_inst/i_fifo'
+Finished Parsing XDC File [C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-5056-DESKTOP-UIUARBH/dcp/axis_data_fifo_0_in_context.xdc] for cell 'L_DELAY_inst/i_fifo'
+Parsing XDC File [C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-5056-DESKTOP-UIUARBH/dcp_2/Xfir_LPF_128t_b16_Z7000_in_context.xdc] for cell 'R_EQ_LPF_inst/fir_compiler_v7_2_6'
+Finished Parsing XDC File [C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-5056-DESKTOP-UIUARBH/dcp_2/Xfir_LPF_128t_b16_Z7000_in_context.xdc] for cell 'R_EQ_LPF_inst/fir_compiler_v7_2_6'
+Parsing XDC File [C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-5056-DESKTOP-UIUARBH/dcp_2/Xfir_LPF_128t_b16_Z7000_in_context.xdc] for cell 'L_EQ_LPF_inst/fir_compiler_v7_2_6'
+Finished Parsing XDC File [C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-5056-DESKTOP-UIUARBH/dcp_2/Xfir_LPF_128t_b16_Z7000_in_context.xdc] for cell 'L_EQ_LPF_inst/fir_compiler_v7_2_6'
+Parsing XDC File [C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-5056-DESKTOP-UIUARBH/dcp_3/Xfir_HPF_128t_b16_Z700_in_context.xdc] for cell 'R_EQ_HPF_inst/fir_compiler_v7_2_6'
+Finished Parsing XDC File [C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-5056-DESKTOP-UIUARBH/dcp_3/Xfir_HPF_128t_b16_Z700_in_context.xdc] for cell 'R_EQ_HPF_inst/fir_compiler_v7_2_6'
+Parsing XDC File [C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-5056-DESKTOP-UIUARBH/dcp_3/Xfir_HPF_128t_b16_Z700_in_context.xdc] for cell 'L_EQ_HPF_inst/fir_compiler_v7_2_6'
+Finished Parsing XDC File [C:/Users/User/Documents/project_1/project_1.runs/synth_1/.Xil/Vivado-5056-DESKTOP-UIUARBH/dcp_3/Xfir_HPF_128t_b16_Z700_in_context.xdc] for cell 'L_EQ_HPF_inst/fir_compiler_v7_2_6'
 Parsing XDC File [C:/Users/User/Documents/project_1/project_1.srcs/constrs_1/zed_audio.xdc]
 INFO: [Timing 38-2] Deriving generated clocks [C:/Users/User/Documents/project_1/project_1.srcs/constrs_1/zed_audio.xdc:4]
 Finished Parsing XDC File [C:/Users/User/Documents/project_1/project_1.srcs/constrs_1/zed_audio.xdc]
@@ -259,24 +263,24 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 1 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 629.117 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 629.414 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'L_DELAY_inst/i_fifo' at clock pin 's_axis_aclk' is different from the actual clock period '10.000', this can result in different synthesis results.
 WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'R_DELAY_inst/i_fifo' at clock pin 's_axis_aclk' is different from the actual clock period '10.000', this can result in different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 629.117 ; gain = 422.375
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 629.414 ; gain = 422.621
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 629.117 ; gain = 422.375
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 629.414 ; gain = 422.621
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 629.117 ; gain = 422.375
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 629.414 ; gain = 422.621
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4471] merging register 'debug_scl_reg' into 'i2c_scl_reg' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/imports/hdl/i3c2.vhd:129]
 INFO: [Synth 8-5544] ROM "i2c_started" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
@@ -294,16 +298,12 @@ INFO: [Synth 8-5544] ROM "sr_in" won't be mapped to Block RAM because address si
 INFO: [Synth 8-5544] ROM "i2s_d_out" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5545] ROM "o_short" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "o_long" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:250]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:270]
 INFO: [Synth 8-5544] ROM "current_volume_LPF" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "current_volume_HPF" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "current_volume_LPF" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "current_volume_HPF" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 629.117 ; gain = 422.375
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 629.414 ; gain = 422.621
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -316,7 +316,7 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     24 Bit       Adders := 6     
+	   2 Input     24 Bit       Adders := 10    
 	   2 Input     16 Bit       Adders := 1     
 	   2 Input     10 Bit       Adders := 1     
 	   2 Input      8 Bit       Adders := 1     
@@ -327,8 +327,8 @@ Detailed RTL Component Info :
 +---Registers : 
 	              127 Bit    Registers := 1     
 	               64 Bit    Registers := 1     
-	               24 Bit    Registers := 18    
-	               16 Bit    Registers := 10    
+	               24 Bit    Registers := 26    
+	               16 Bit    Registers := 2     
 	               10 Bit    Registers := 2     
 	                9 Bit    Registers := 2     
 	                8 Bit    Registers := 2     
@@ -354,7 +354,6 @@ Detailed RTL Component Info :
 	  13 Input      9 Bit        Muxes := 1     
 	   6 Input      8 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 2     
-	   2 Input      7 Bit        Muxes := 2     
 	   2 Input      4 Bit        Muxes := 8     
 	   4 Input      4 Bit        Muxes := 1     
 	   7 Input      4 Bit        Muxes := 1     
@@ -381,7 +380,7 @@ Hierarchical RTL Component report
 Module action 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     24 Bit       Adders := 6     
+	   2 Input     24 Bit       Adders := 10    
 	   2 Input      3 Bit       Adders := 2     
 +---Registers : 
 	               24 Bit    Registers := 8     
@@ -390,7 +389,6 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input     24 Bit        Muxes := 4     
 	   4 Input     24 Bit        Muxes := 4     
-	   2 Input      7 Bit        Muxes := 2     
 	   2 Input      3 Bit        Muxes := 2     
 	   4 Input      3 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 4     
@@ -478,12 +476,12 @@ Detailed RTL Component Info :
 Module EQ_HPF 
 Detailed RTL Component Info : 
 +---Registers : 
-	               16 Bit    Registers := 2     
+	               24 Bit    Registers := 2     
 	                1 Bit    Registers := 4     
 Module EQ_LPF 
 Detailed RTL Component Info : 
 +---Registers : 
-	               16 Bit    Registers := 2     
+	               24 Bit    Registers := 2     
 	                1 Bit    Registers := 4     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
@@ -497,7 +495,7 @@ BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 629.117 ; gain = 422.375
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 629.414 ; gain = 422.621
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -512,9 +510,9 @@ WARNING: [Synth 8-3917] design action has port AC_ADR0 driven by constant 1
 WARNING: [Synth 8-3917] design action has port AC_ADR1 driven by constant 1
 WARNING: [Synth 8-3331] design action has unconnected port BTND
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 629.117 ; gain = 422.375
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:41 . Memory (MB): peak = 629.414 ; gain = 422.621
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 629.117 ; gain = 422.375
+Finished Parallel Reinference  : Time (s): cpu = 00:00:33 ; elapsed = 00:00:41 . Memory (MB): peak = 629.414 ; gain = 422.621
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -566,9 +564,9 @@ WARNING: [Synth 8-3332] Sequential element (i_audio/Inst_adau1761_izedboard/Inst
 WARNING: [Synth 8-3332] Sequential element (line_in_l_EQ_reg[0]) is unused and will be removed from module action.
 WARNING: [Synth 8-3332] Sequential element (line_in_r_EQ_reg[0]) is unused and will be removed from module action.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 629.117 ; gain = 422.375
+Finished Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:45 . Memory (MB): peak = 629.414 ; gain = 422.621
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 629.117 ; gain = 422.375
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:36 ; elapsed = 00:00:45 . Memory (MB): peak = 629.414 ; gain = 422.621
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -582,10 +580,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:49 . Memory (MB): peak = 629.117 ; gain = 422.375
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:01:03 . Memory (MB): peak = 629.414 ; gain = 422.621
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:49 . Memory (MB): peak = 629.117 ; gain = 422.375
+Finished Timing Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:01:04 . Memory (MB): peak = 629.414 ; gain = 422.621
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -598,16 +596,16 @@ Start Technology Mapping
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4480] The timing for the instance i_audio/Inst_adau1761_izedboard/Inst_i2c/Inst_adau1761_configuraiton_data/data_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:50 . Memory (MB): peak = 629.117 ; gain = 422.375
+Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:01:05 . Memory (MB): peak = 629.414 ; gain = 422.621
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:43 ; elapsed = 00:00:50 . Memory (MB): peak = 629.117 ; gain = 422.375
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:56 ; elapsed = 00:01:05 . Memory (MB): peak = 629.414 ; gain = 422.621
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:43 ; elapsed = 00:00:50 . Memory (MB): peak = 629.117 ; gain = 422.375
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:56 ; elapsed = 00:01:05 . Memory (MB): peak = 629.414 ; gain = 422.621
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -710,123 +708,22 @@ WARNING: [Synth 8-3295] tying undriven pin L_o_dat_inferred:in0[16] to constant 
 WARNING: [Synth 8-3295] tying undriven pin L_o_dat_inferred:in0[15] to constant 0
 WARNING: [Synth 8-3295] tying undriven pin L_o_dat_inferred:in0[14] to constant 0
 INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:332]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:337]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:51 . Memory (MB): peak = 629.117 ; gain = 422.375
+Finished IO Insertion : Time (s): cpu = 00:00:57 ; elapsed = 00:01:07 . Memory (MB): peak = 629.414 ; gain = 422.621
 ---------------------------------------------------------------------------------
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[23] with 1st driver pin 'line_in_l_HPF_reg[23]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[23] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[22] with 1st driver pin 'line_in_l_HPF_reg[22]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[22] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[21] with 1st driver pin 'line_in_l_HPF_reg[21]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[21] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[20] with 1st driver pin 'line_in_l_HPF_reg[20]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[20] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[19] with 1st driver pin 'line_in_l_HPF_reg[19]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[19] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[18] with 1st driver pin 'line_in_l_HPF_reg[18]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[18] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[17] with 1st driver pin 'line_in_l_HPF_reg[17]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[17] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[16] with 1st driver pin 'line_in_l_HPF_reg[16]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[16] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[15] with 1st driver pin 'line_in_l_HPF_reg[15]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[15] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[14] with 1st driver pin 'line_in_l_HPF_reg[14]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[14] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[13] with 1st driver pin 'line_in_l_HPF_reg[13]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[13] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[12] with 1st driver pin 'line_in_l_HPF_reg[12]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[12] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[11] with 1st driver pin 'line_in_l_HPF_reg[11]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[11] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[10] with 1st driver pin 'line_in_l_HPF_reg[10]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[10] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[9] with 1st driver pin 'line_in_l_HPF_reg[9]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[9] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[8] with 1st driver pin 'line_in_l_HPF_reg[8]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[8] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[7] with 1st driver pin 'line_in_l_HPF_reg[7]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[7] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[6] with 1st driver pin 'line_in_l_HPF_reg[6]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[6] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[5] with 1st driver pin 'line_in_l_HPF_reg[5]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[5] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[4] with 1st driver pin 'line_in_l_HPF_reg[4]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[4] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[3] with 1st driver pin 'line_in_l_HPF_reg[3]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[3] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[2] with 1st driver pin 'line_in_l_HPF_reg[2]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[2] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[1] with 1st driver pin 'line_in_l_HPF_reg[1]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[1] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[0] with 1st driver pin 'line_in_l_HPF_reg[0]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_HPF[0] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:260]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[23] with 1st driver pin 'line_in_l_LPF_reg[23]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[23] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[22] with 1st driver pin 'line_in_l_LPF_reg[22]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[22] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[21] with 1st driver pin 'line_in_l_LPF_reg[21]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[21] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[20] with 1st driver pin 'line_in_l_LPF_reg[20]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[20] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[19] with 1st driver pin 'line_in_l_LPF_reg[19]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[19] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[18] with 1st driver pin 'line_in_l_LPF_reg[18]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[18] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[17] with 1st driver pin 'line_in_l_LPF_reg[17]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[17] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[16] with 1st driver pin 'line_in_l_LPF_reg[16]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[16] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[15] with 1st driver pin 'line_in_l_LPF_reg[15]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[15] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[14] with 1st driver pin 'line_in_l_LPF_reg[14]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[14] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[13] with 1st driver pin 'line_in_l_LPF_reg[13]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[13] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[12] with 1st driver pin 'line_in_l_LPF_reg[12]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[12] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[11] with 1st driver pin 'line_in_l_LPF_reg[11]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[11] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[10] with 1st driver pin 'line_in_l_LPF_reg[10]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[10] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[9] with 1st driver pin 'line_in_l_LPF_reg[9]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[9] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[8] with 1st driver pin 'line_in_l_LPF_reg[8]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[8] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[7] with 1st driver pin 'line_in_l_LPF_reg[7]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[7] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[6] with 1st driver pin 'line_in_l_LPF_reg[6]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[6] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[5] with 1st driver pin 'line_in_l_LPF_reg[5]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[5] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[4] with 1st driver pin 'line_in_l_LPF_reg[4]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[4] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[3] with 1st driver pin 'line_in_l_LPF_reg[3]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[3] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[2] with 1st driver pin 'line_in_l_LPF_reg[2]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[2] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[1] with 1st driver pin 'line_in_l_LPF_reg[1]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[1] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[0] with 1st driver pin 'line_in_l_LPF_reg[0]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_l_LPF[0] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:280]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_r_HPF[23] with 1st driver pin 'line_in_r_HPF_reg[23]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:250]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_r_HPF[23] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:250]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_r_HPF[22] with 1st driver pin 'line_in_r_HPF_reg[22]/Q' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:250]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net line_in_r_HPF[22] with 2nd driver pin 'GND' [C:/Users/User/Documents/project_1/project_1.srcs/sources_1/new/action.vhd:250]
-INFO: [Common 17-14] Message 'Synth 8-3352' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 
 Report Check Netlist: 
 +------+------------------+-------+---------+-------+------------------+
 |      |Item              |Errors |Warnings |Status |Description       |
 +------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|       96|Failed |Multi driven nets |
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:51 . Memory (MB): peak = 629.117 ; gain = 422.375
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:57 ; elapsed = 00:01:07 . Memory (MB): peak = 629.414 ; gain = 422.621
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -838,25 +735,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:51 . Memory (MB): peak = 629.117 ; gain = 422.375
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:57 ; elapsed = 00:01:07 . Memory (MB): peak = 629.414 ; gain = 422.621
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:51 . Memory (MB): peak = 629.117 ; gain = 422.375
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:57 ; elapsed = 00:01:07 . Memory (MB): peak = 629.414 ; gain = 422.621
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:51 . Memory (MB): peak = 629.117 ; gain = 422.375
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:57 ; elapsed = 00:01:07 . Memory (MB): peak = 629.414 ; gain = 422.621
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:00:51 . Memory (MB): peak = 629.117 ; gain = 422.375
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:57 ; elapsed = 00:01:07 . Memory (MB): peak = 629.414 ; gain = 422.621
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -899,18 +796,18 @@ Report Cell Usage:
 |5     |axis_data_fifo_0           |     1|
 |6     |axis_data_fifo_0__2        |     1|
 |7     |BUFG                       |     1|
-|8     |CARRY4                     |    73|
-|9     |LUT1                       |   209|
-|10    |LUT2                       |   180|
+|8     |CARRY4                     |    97|
+|9     |LUT1                       |   389|
+|10    |LUT2                       |   112|
 |11    |LUT3                       |    18|
 |12    |LUT4                       |   134|
-|13    |LUT5                       |    43|
-|14    |LUT6                       |   114|
+|13    |LUT5                       |   123|
+|14    |LUT6                       |   102|
 |15    |MMCME2_ADV                 |     1|
 |16    |RAMB18E1                   |     1|
 |17    |SRL16E                     |     3|
 |18    |SRLC32E                    |     3|
-|19    |FDRE                       |   858|
+|19    |FDRE                       |   922|
 |20    |IBUF                       |     7|
 |21    |IBUFG                      |     1|
 |22    |IOBUF                      |     1|
@@ -921,15 +818,15 @@ Report Instance Areas:
 +------+-----------------------------------------+----------------------------+------+
 |      |Instance                                 |Module                      |Cells |
 +------+-----------------------------------------+----------------------------+------+
-|1     |top                                      |                            |  2080|
+|1     |top                                      |                            |  2380|
 |2     |  R_DELAY_inst                           |fifo_delay__2               |   194|
 |3     |  L_DELAY_inst                           |fifo_delay                  |   194|
-|4     |  R_EQ_HPF_inst                          |EQ_HPF__2                   |   104|
-|5     |  L_EQ_HPF_inst                          |EQ_HPF                      |   104|
-|6     |  R_EQ_LPF_inst                          |EQ_LPF__2                   |   104|
-|7     |  L_EQ_LPF_inst                          |EQ_LPF                      |   104|
-|8     |  Button_Press_Left                      |button                      |   101|
-|9     |  Button_Press_Right                     |button_0                    |   101|
+|4     |  R_EQ_HPF_inst                          |EQ_HPF__2                   |   128|
+|5     |  L_EQ_HPF_inst                          |EQ_HPF                      |   128|
+|6     |  R_EQ_LPF_inst                          |EQ_LPF__2                   |   128|
+|7     |  L_EQ_LPF_inst                          |EQ_LPF                      |   128|
+|8     |  Button_Press_Left                      |button                      |   123|
+|9     |  Button_Press_Right                     |button_0                    |   123|
 |10    |  Button_Press_Up                        |button_1                    |   177|
 |11    |  i_audio                                |audio_top                   |   552|
 |12    |    Inst_adau1761_izedboard              |adau1761_izedboard          |   444|
@@ -941,13 +838,13 @@ Report Instance Areas:
 |18    |    i_clocking                           |clocking                    |     3|
 +------+-----------------------------------------+----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:51 . Memory (MB): peak = 629.117 ; gain = 422.375
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:57 ; elapsed = 00:01:07 . Memory (MB): peak = 629.414 ; gain = 422.621
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 192 critical warnings and 115 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:34 . Memory (MB): peak = 629.117 ; gain = 99.020
-Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:52 . Memory (MB): peak = 629.117 ; gain = 422.375
+Synthesis finished with 0 errors, 0 critical warnings and 115 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 629.414 ; gain = 99.344
+Synthesis Optimization Complete : Time (s): cpu = 00:00:58 ; elapsed = 00:01:07 . Memory (MB): peak = 629.414 ; gain = 422.621
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 84 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 108 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -957,8 +854,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   SRLC32E => SRL16E: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-156 Infos, 122 Warnings, 100 Critical Warnings and 0 Errors encountered.
+151 Infos, 126 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:48 . Memory (MB): peak = 629.117 ; gain = 422.375
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 629.117 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Mar 26 20:37:55 2025...
+synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 629.414 ; gain = 422.621
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 629.414 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 31 23:24:50 2025...

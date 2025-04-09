@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1742996217">
-  <File Type="PA-TCL" Name="action.tcl"/>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1743438215">
   <File Type="RDS-PROPCONSTRS" Name="action_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="action.tcl"/>
   <File Type="RDS-RDS" Name="action.vds"/>
   <File Type="RDS-UTIL" Name="action_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="action_utilization_synth.pb"/>
@@ -190,6 +190,6 @@
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="axis_data_fifo_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="Xfir_LPF_128t_b16_Z7000"/>
   <BlockFileSet Type="BlockSrcs" Name="Xfir_HPF_128t_b16_Z700"/>
+  <BlockFileSet Type="BlockSrcs" Name="Xfir_LPF_128t_b16_Z7000"/>
 </GenRun>

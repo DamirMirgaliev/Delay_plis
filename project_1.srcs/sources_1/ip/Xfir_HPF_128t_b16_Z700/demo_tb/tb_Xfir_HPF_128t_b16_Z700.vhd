@@ -92,11 +92,11 @@ architecture tb of tb_Xfir_HPF_128t_b16_Z700 is
   -- Data slave channel signals
   signal s_axis_data_tvalid              : std_logic := '0';  -- payload is valid
   signal s_axis_data_tready              : std_logic := '1';  -- slave is ready
-  signal s_axis_data_tdata               : std_logic_vector(15 downto 0) := (others => '0');  -- data payload
+  signal s_axis_data_tdata               : std_logic_vector(23 downto 0) := (others => '0');  -- data payload
 
   -- Data master channel signals
   signal m_axis_data_tvalid              : std_logic := '0';  -- payload is valid
-  signal m_axis_data_tdata               : std_logic_vector(39 downto 0) := (others => '0');  -- data payload
+  signal m_axis_data_tdata               : std_logic_vector(47 downto 0) := (others => '0');  -- data payload
 
   -----------------------------------------------------------------------
   -- Aliases for AXI channel TDATA and TUSER fields
@@ -106,10 +106,10 @@ architecture tb of tb_Xfir_HPF_128t_b16_Z700 is
   -----------------------------------------------------------------------
 
   -- Data slave channel alias signals
-  signal s_axis_data_tdata_data        : std_logic_vector(15 downto 0) := (others => '0');
+  signal s_axis_data_tdata_data        : std_logic_vector(23 downto 0) := (others => '0');
 
   -- Data master channel alias signals
-  signal m_axis_data_tdata_data        : std_logic_vector(32 downto 0) := (others => '0');
+  signal m_axis_data_tdata_data        : std_logic_vector(40 downto 0) := (others => '0');
 
 
 begin
@@ -153,7 +153,7 @@ begin
     -- Procedure to drive a number of input samples with specific data
     -- data is the data value to drive on the tdata signal
     -- samples is the number of zero-data input samples to drive
-    procedure drive_data ( data    : std_logic_vector(15 downto 0);
+    procedure drive_data ( data    : std_logic_vector(23 downto 0);
                            samples : natural := 1 ) is
       variable ip_count : integer := 0;
     begin
@@ -184,10 +184,10 @@ begin
     -- Procedure to drive an impulse and let the impulse response emerge on the data master channel
     -- samples is the number of input samples to drive; default is enough for impulse response output to emerge
     procedure drive_impulse ( samples : natural := 69 ) is
-      variable impulse : std_logic_vector(15 downto 0);
+      variable impulse : std_logic_vector(23 downto 0);
     begin
       impulse := (others => '0');  -- initialize unused bits to zero
-      impulse(15 downto 0) := "0100000000000000";
+      impulse(23 downto 0) := "010000000000000000000000";
       drive_data(impulse);
       if samples > 1 then
         drive_zeros(samples-1);
@@ -253,9 +253,9 @@ begin
   -----------------------------------------------------------------------
 
   -- Data slave channel alias signals
-  s_axis_data_tdata_data        <= s_axis_data_tdata(15 downto 0);
+  s_axis_data_tdata_data        <= s_axis_data_tdata(23 downto 0);
 
   -- Data master channel alias signals: update these only when they are valid
-  m_axis_data_tdata_data        <= m_axis_data_tdata(32 downto 0) when m_axis_data_tvalid = '1';
+  m_axis_data_tdata_data        <= m_axis_data_tdata(40 downto 0) when m_axis_data_tvalid = '1';
 
 end tb;

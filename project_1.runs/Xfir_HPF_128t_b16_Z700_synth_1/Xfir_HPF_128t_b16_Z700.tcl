@@ -15,8 +15,8 @@ set_property parent.project_path C:/Users/User/Documents/project_1/project_1.xpr
 set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-read_ip -quiet c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_HPF_128t_b16_Z700/Xfir_HPF_128t_b16_Z700.xci
-set_property is_locked true [get_files c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_HPF_128t_b16_Z700/Xfir_HPF_128t_b16_Z700.xci]
+read_ip -quiet C:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_HPF_128t_b16_Z700/Xfir_HPF_128t_b16_Z700.xci
+set_property is_locked true [get_files C:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_HPF_128t_b16_Z700/Xfir_HPF_128t_b16_Z700.xci]
 
 foreach dcp [get_files -quiet -all *.dcp] {
   set_property used_in_implementation false $dcp
@@ -33,44 +33,44 @@ write_checkpoint -force -noxdef Xfir_HPF_128t_b16_Z700.dcp
 catch { report_utilization -file Xfir_HPF_128t_b16_Z700_utilization_synth.rpt -pb Xfir_HPF_128t_b16_Z700_utilization_synth.pb }
 
 if { [catch {
-  file copy -force C:/Users/User/Documents/project_1/project_1.runs/Xfir_HPF_128t_b16_Z700_synth_1/Xfir_HPF_128t_b16_Z700.dcp c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_HPF_128t_b16_Z700/Xfir_HPF_128t_b16_Z700.dcp
+  file copy -force C:/Users/User/Documents/project_1/project_1.runs/Xfir_HPF_128t_b16_Z700_synth_1/Xfir_HPF_128t_b16_Z700.dcp C:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_HPF_128t_b16_Z700/Xfir_HPF_128t_b16_Z700.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  write_verilog -force -mode synth_stub c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_HPF_128t_b16_Z700/Xfir_HPF_128t_b16_Z700_stub.v
+  write_verilog -force -mode synth_stub C:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_HPF_128t_b16_Z700/Xfir_HPF_128t_b16_Z700_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode synth_stub c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_HPF_128t_b16_Z700/Xfir_HPF_128t_b16_Z700_stub.vhdl
+  write_vhdl -force -mode synth_stub C:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_HPF_128t_b16_Z700/Xfir_HPF_128t_b16_Z700_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_verilog -force -mode funcsim c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_HPF_128t_b16_Z700/Xfir_HPF_128t_b16_Z700_sim_netlist.v
+  write_verilog -force -mode funcsim C:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_HPF_128t_b16_Z700/Xfir_HPF_128t_b16_Z700_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode funcsim c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_HPF_128t_b16_Z700/Xfir_HPF_128t_b16_Z700_sim_netlist.vhdl
+  write_vhdl -force -mode funcsim C:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_HPF_128t_b16_Z700/Xfir_HPF_128t_b16_Z700_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if {[file isdir C:/Users/User/Documents/project_1/project_1.ip_user_files/ip/Xfir_HPF_128t_b16_Z700]} {
   catch { 
-    file copy -force c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_HPF_128t_b16_Z700/Xfir_HPF_128t_b16_Z700_stub.v C:/Users/User/Documents/project_1/project_1.ip_user_files/ip/Xfir_HPF_128t_b16_Z700
+    file copy -force C:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_HPF_128t_b16_Z700/Xfir_HPF_128t_b16_Z700_stub.v C:/Users/User/Documents/project_1/project_1.ip_user_files/ip/Xfir_HPF_128t_b16_Z700
   }
 }
 
 if {[file isdir C:/Users/User/Documents/project_1/project_1.ip_user_files/ip/Xfir_HPF_128t_b16_Z700]} {
   catch { 
-    file copy -force c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_HPF_128t_b16_Z700/Xfir_HPF_128t_b16_Z700_stub.vhdl C:/Users/User/Documents/project_1/project_1.ip_user_files/ip/Xfir_HPF_128t_b16_Z700
+    file copy -force C:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_HPF_128t_b16_Z700/Xfir_HPF_128t_b16_Z700_stub.vhdl C:/Users/User/Documents/project_1/project_1.ip_user_files/ip/Xfir_HPF_128t_b16_Z700
   }
 }

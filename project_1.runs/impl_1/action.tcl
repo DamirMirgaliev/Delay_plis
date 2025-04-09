@@ -58,10 +58,10 @@ set rc [catch {
   add_files -quiet C:/Users/User/Documents/project_1/project_1.runs/synth_1/action.dcp
   add_files -quiet c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/axis_data_fifo_0/axis_data_fifo_0.dcp
   set_property netlist_only true [get_files c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/axis_data_fifo_0/axis_data_fifo_0.dcp]
-  add_files -quiet c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_LPF_128t_b16_Z7000/Xfir_LPF_128t_b16_Z7000.dcp
-  set_property netlist_only true [get_files c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_LPF_128t_b16_Z7000/Xfir_LPF_128t_b16_Z7000.dcp]
-  add_files -quiet c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_HPF_128t_b16_Z700/Xfir_HPF_128t_b16_Z700.dcp
-  set_property netlist_only true [get_files c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_HPF_128t_b16_Z700/Xfir_HPF_128t_b16_Z700.dcp]
+  add_files -quiet C:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_LPF_128t_b16_Z7000/Xfir_LPF_128t_b16_Z7000.dcp
+  set_property netlist_only true [get_files C:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_LPF_128t_b16_Z7000/Xfir_LPF_128t_b16_Z7000.dcp]
+  add_files -quiet C:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_HPF_128t_b16_Z700/Xfir_HPF_128t_b16_Z700.dcp
+  set_property netlist_only true [get_files C:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/Xfir_HPF_128t_b16_Z700/Xfir_HPF_128t_b16_Z700.dcp]
   read_xdc -mode out_of_context -ref axis_data_fifo_0 -cells inst c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/axis_data_fifo_0/axis_data_fifo_0_ooc.xdc
   set_property processing_order EARLY [get_files c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/axis_data_fifo_0/axis_data_fifo_0_ooc.xdc]
   read_xdc -ref axis_data_fifo_0 -cells inst c:/Users/User/Documents/project_1/project_1.srcs/sources_1/ip/axis_data_fifo_0/axis_data_fifo_0/axis_data_fifo_0.xdc
